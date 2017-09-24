@@ -1,5 +1,7 @@
-#过滤压缩包
+﻿#过滤压缩包
 *.zip
 #过滤单个文件
 .git
+#过滤node_modules文件
+.node_modules
 
