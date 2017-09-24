@@ -3,7 +3,7 @@
 		// 属性
 		var defaults = {
 			// 宽高
-			width:1263,
+			width:1400,
 			height:480,
 			// 自动轮播
 			autoPlay:true,

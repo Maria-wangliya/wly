@@ -4,8 +4,15 @@ jQuery(function($){
         index:0,
         type:'fade'
     });
-    console.log($('.classify ul li'));
-    for($i=0;$i<$('.classify ul li').length;$i++){
-        console.log(666);
+    //二级菜单的hover部分
+    $lis = $('.classify ul li');
+    for($i=0;$i<$lis.length;$i++){
+        $($lis[$i]).mouseover(function(){
+           $(this).children('ul').css('display','block');
+        });
+        $($lis[$i]).mouseout(function(){
+           $(this).children('ul').css('display','none');
+        });
     }
+  
 });

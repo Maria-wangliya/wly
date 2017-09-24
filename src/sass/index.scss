@@ -1,7 +1,6 @@
 
 // 导入其他sass文件
 @import 'var';
-
 #box{
     min-width:$width;
     a:hover{
@@ -10,6 +9,7 @@
     #header{
 	    background:#F7F7F7;
 	    .container{
+	    	margin:0 36px;
 	    	border-bottom: 1px solid #E8E8E7;
 	    	height:$height;padding-left:20px;
 	    	a{
@@ -153,8 +153,9 @@
 		.container{
 			padding-top:20px;
 			height: 53px;
+			margin:0 36px;
 			h3.classify{
-				font-size:16px;
+				font-size:18px;
 				float:left;
 				line-height:34px;
 				color:#fff;
@@ -163,7 +164,7 @@
 				padding-left:10px;
 				background:#E91456;
 				position:relative;
-				ul{
+				ul.classify_ul{
 					height: 480px;
 					width: 190px;
 					background:#3B2C33;
@@ -174,8 +175,36 @@
 					li{
 						height: 52px;
 						padding-left:10px;
+						position:relative;
+						.li_classify{
+							display:none;
+							height: 482px;
+							width: 570px;
+							position:absolute;
+							top:-54px;
+							left:190px;
+							background:#F5FAFA;
+							opacity:0.8;
+							z-index:99999;
+							li{
+								color:#444;
+								height:36px;
+								@for $i from 1 through 1{
+								a:nth-child(#{$i}){color:#000;font-weight:bold;};
+								}
+								a{
+									font-size:$fontSize;
+									color:#444;
+									font-weight:normal;
+								}
+								a:hover{text-decoration:underline;}
+							}
+							li:hover{
+								background:#F5FAFA;
+							}
+						}
 						p{
-							height:20px;
+							height:24px;
 						}
 						p>a{
 							color:#fff;
@@ -199,6 +228,41 @@
 							p>a{
 								color:#333;
 							}
+						}	
+					}
+					li:nth-child(3){
+						.li_classify{
+							top:-106px;
+						}
+					}
+					li:nth-child(4){
+						.li_classify{
+							top:-158px;
+						}
+					}
+					li:nth-child(5){
+						.li_classify{
+							top:-210px;
+						}
+					}
+					li:nth-child(6){
+						.li_classify{
+							top:-262px;
+						}
+					}
+					li:nth-child(7){
+						.li_classify{
+							top:-314px;
+						}
+					}
+					li:nth-child(8){
+						.li_classify{
+							top:-366px;
+						}
+					}
+					li:nth-child(9){
+						.li_classify{
+							top:-418px;
 						}
 					}
 				}
@@ -302,7 +366,7 @@
 		height: 482px;
 		border-top:2px solid #E91455;
 		.xcarousel{
-			position:relative;width:100%;height: 480px;overflow: hidden;
+			position:relative;height: 480px;overflow: hidden;
 			ul{
 				position:absolute;left:0;top:0;overflow: hidden;
 			}
@@ -329,12 +393,17 @@
 	}
 	#hotPlay{
 		.container{
+			a:hover{
+				color:#E91455;
+				text-decoration:underline;
+			}
+			margin: 0 36px;
 			h4{
 				width: 170px;
 				height: 50px;
 				font-weight:normal;
 				a{
-					font-size:18px;
+					font-size:20px;
 					font-family: "微软雅黑";
 					color:#333;
 					line-height:50px;
@@ -344,6 +413,176 @@
 				}
 				a:last-child{
 					padding-left:10px;
+				}
+			}
+			.hot{
+				height: 384px;
+				p.p1{float:left;height: 330px;}
+			}
+			.recommend{
+				height:384px;
+				p.p2{float:left;height: 330px;}
+				p.sale{
+					float:right;
+					padding-right:10px;
+					color:#E91455;
+					font-size:12px;
+				}
+			}
+			.hotlist{
+					float:left;height:330px;
+					ul{
+						overflow:hidden;
+						margin-left:20px;
+						li{
+							float:left;
+							height:330px;
+							width:230px;
+							border:1px solid #F8F8F8;
+							margin-right:15px;
+							p:first-child{
+								line-height:24px;
+								text-align:center;
+								color:#E91455;
+							}
+							img{
+								width: 228px;
+								height: 228px;
+							}
+							p.title{
+								padding:24px 0 0 10px;
+								font-size:$fontSize;
+								a{
+									color:#444;
+								}
+								a:hover{
+									color:#E91455;
+									text-decoration:underline;
+								}
+							}
+							p.price{
+								color:#444;
+								padding:10px 0 0 10px;
+								color:#E91455;
+							}
+						}
+						li:hover{
+							border:1px solid #ddd;
+						}
+					}
+			}
+			.hotlist1{
+				ul{
+					li{
+						p:first-child{position:relative;}
+						p:first-child:before{
+							content:'';
+							display:block;
+							height:50px;
+							width: 38px;
+							background:url('../img/img.fw.png') -449px -102px;
+							position:absolute;
+							top:23px;
+							left:0;
+						}
+					}
+				}
+			}
+			.hotlist3{
+				float:left;
+				height:520px;
+				width: 600px;
+				ul{
+					li{
+						padding-left:5px;
+						width: 177px;
+						height: 260px;
+						img{
+							width: 167px;
+							height: 167px;
+						}
+					}
+					@for $i from 4 through 6{
+						li:nth-child(#{$i}){
+							padding-top:3px;
+							p:last-child{
+								padding-top:20px;
+							}
+						};
+					}
+
+				}
+			}
+			.clothes{
+				h4{
+					padding-left:40px;
+					position:relative;
+					i{
+						display:block;
+						height: 48px;
+						width: 39px;
+						background:url('../img/img.fw.png') -143px -160px;
+						position:absolute;
+						top:0;
+						left:0;
+					}
+				}
+				p.p3{
+					float:left;
+				}
+				.left{
+					float:left;
+					ul{
+						background:#FDF4F7;
+						height: 130px;
+						width: 190px;
+						li{
+							padding:12px;
+							a{
+								color:#444;
+								font-size:12px;
+								padding-right:20px;
+							}
+							a:hover{
+								color:#E91455;
+								text-decoration:underline;
+							}
+						}
+					}	
+				}
+			}
+			.makeUp{
+				h4{
+					i{
+						background-position:-203px -163px;
+					}
+				}
+				.left{
+					ul{
+						li{
+							padding:12px;
+							a{
+								padding-right:5px;
+							}
+						}
+					}
+				}
+			}
+			.hotlist4{
+				ul{
+					@for $i from 4 through 6{
+						li:nth-child(#{$i}){
+							padding-top:0px;
+							p:last-child{
+								padding-top:8px;
+							}
+						};
+					}
+					li:nth-child(5){
+						p:last-child{
+							padding-top:20px;
+						}
+					}
 				}
 			}
 		}

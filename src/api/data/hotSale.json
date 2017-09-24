@@ -1,34 +1,34 @@
 [
     {
         "id":"H001",
-        "title":"",
-        "imgurl":"../img/hot1.jpg",
+        "title":"尤亚头层牛皮时尚加大沙发组合",
+        "time":"[00:30~01:19]",
+        "imgurl":"img/hot1.jpg",
         "url":"#",
-        "price":,
-        "time":"[00:00~00:43]"
+        "price":5998.00
     },
     {
         "id":"H002",
-        "title":"",
-        "imgurl":"../img/hot2.jpg",
+        "title":"Anci智能RO反渗透净水机",
+        "time":"[01:20~02:03]",
+        "imgurl":"img/hot2.jpg",
         "url":"#",
-        "price":,
-        "time":"[00:45~01:28]"
+        "price":1980.00
     },
     {
         "id":"H003",
-        "title":"",
-        "imgurl":"../img/hot3.jpg",
+        "title":"德国UKS-12L智能恒温热水器",
+        "time":"[02:05~02:48]",
+        "imgurl":"img/hot3.jpg",
         "url":"#",
-        "price":,
-        "time":"[01:30~02:13]"
+        "price":1680.00
     },
     {
         "id":"H004",
-        "title":"",
-        "imgurl":"../img/hot4.jpg",
+        "title":"德国UKS-16L智能恒温热水器",
+        "time":"[02:05~02:48]",
+        "imgurl":"img/hot5.jpg",
         "url":"#",
-        "price":,
-        "time":"[02:15~02:54]"
+        "price":2680.00
     }
 ]

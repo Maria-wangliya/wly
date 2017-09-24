@@ -1,11 +1,12 @@
 @charset "UTF-8";
 #box {
-  min-width: 100%; }
+  min-width: 1263px; }
   #box a:hover {
     cursor: pointer; }
   #box #header {
     background: #F7F7F7; }
     #box #header .container {
+      margin: 0 36px;
       border-bottom: 1px solid #E8E8E7;
       height: 36px;
       padding-left: 20px; }
@@ -128,9 +129,10 @@
           font-size: 12px; }
   #box #nav .container {
     padding-top: 20px;
-    height: 53px; }
+    height: 53px;
+    margin: 0 36px; }
     #box #nav .container h3.classify {
-      font-size: 16px;
+      font-size: 18px;
       float: left;
       line-height: 34px;
       color: #fff;
@@ -139,7 +141,7 @@
       padding-left: 10px;
       background: #E91456;
       position: relative; }
-      #box #nav .container h3.classify ul {
+      #box #nav .container h3.classify ul.classify_ul {
         height: 480px;
         width: 190px;
         background: #3B2C33;
@@ -147,70 +149,109 @@
         z-index: 999;
         top: 35px;
         left: 0; }
-        #box #nav .container h3.classify ul li {
+        #box #nav .container h3.classify ul.classify_ul li {
           height: 52px;
-          padding-left: 10px; }
-          #box #nav .container h3.classify ul li p {
-            height: 20px; }
-          #box #nav .container h3.classify ul li p > a {
+          padding-left: 10px;
+          position: relative; }
+          #box #nav .container h3.classify ul.classify_ul li .li_classify {
+            display: none;
+            height: 482px;
+            width: 570px;
+            position: absolute;
+            top: -54px;
+            left: 190px;
+            background: #F5FAFA;
+            opacity: 0.8;
+            z-index: 99999; }
+            #box #nav .container h3.classify ul.classify_ul li .li_classify li {
+              color: #444;
+              height: 36px; }
+              #box #nav .container h3.classify ul.classify_ul li .li_classify li a:nth-child(1) {
+                color: #000;
+                font-weight: bold; }
+              #box #nav .container h3.classify ul.classify_ul li .li_classify li a {
+                font-size: 12px;
+                color: #444;
+                font-weight: normal; }
+              #box #nav .container h3.classify ul.classify_ul li .li_classify li a:hover {
+                text-decoration: underline; }
+            #box #nav .container h3.classify ul.classify_ul li .li_classify li:hover {
+              background: #F5FAFA; }
+          #box #nav .container h3.classify ul.classify_ul li p {
+            height: 24px; }
+          #box #nav .container h3.classify ul.classify_ul li p > a {
             color: #fff;
             padding-right: 5px; }
-          #box #nav .container h3.classify ul li p > a:hover {
+          #box #nav .container h3.classify ul.classify_ul li p > a:hover {
             text-decoration: underline; }
-          #box #nav .container h3.classify ul li p:nth-child(2n+1) a:nth-child(1) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n+1) a:nth-child(1) {
             font-size: 14px; }
-          #box #nav .container h3.classify ul li p:nth-child(2n+1) a:nth-child(2) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n+1) a:nth-child(2) {
             font-size: 14px; }
-          #box #nav .container h3.classify ul li p:nth-child(2n+1) a:nth-child(3) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n+1) a:nth-child(3) {
             font-size: 14px; }
-          #box #nav .container h3.classify ul li p:nth-child(2n+1) a:nth-child(4) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n+1) a:nth-child(4) {
             font-size: 14px; }
-          #box #nav .container h3.classify ul li p:nth-child(2n+1) a:nth-child(5) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n+1) a:nth-child(5) {
             font-size: 14px; }
-          #box #nav .container h3.classify ul li p:nth-child(2n+1) a:nth-child(6) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n+1) a:nth-child(6) {
             font-size: 14px; }
-          #box #nav .container h3.classify ul li p:nth-child(2n+1) a:nth-child(7) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n+1) a:nth-child(7) {
             font-size: 14px; }
-          #box #nav .container h3.classify ul li p:nth-child(2n+1) a:nth-child(8) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n+1) a:nth-child(8) {
             font-size: 14px; }
-          #box #nav .container h3.classify ul li p:nth-child(2n+1) a:nth-child(9) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n+1) a:nth-child(9) {
             font-size: 14px; }
-          #box #nav .container h3.classify ul li p:nth-child(2n+1) a:nth-child(10) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n+1) a:nth-child(10) {
             font-size: 14px; }
-          #box #nav .container h3.classify ul li p:nth-child(2n) a:nth-child(1) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n) a:nth-child(1) {
             font-size: 12px;
             font-weight: normal; }
-          #box #nav .container h3.classify ul li p:nth-child(2n) a:nth-child(2) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n) a:nth-child(2) {
             font-size: 12px;
             font-weight: normal; }
-          #box #nav .container h3.classify ul li p:nth-child(2n) a:nth-child(3) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n) a:nth-child(3) {
             font-size: 12px;
             font-weight: normal; }
-          #box #nav .container h3.classify ul li p:nth-child(2n) a:nth-child(4) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n) a:nth-child(4) {
             font-size: 12px;
             font-weight: normal; }
-          #box #nav .container h3.classify ul li p:nth-child(2n) a:nth-child(5) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n) a:nth-child(5) {
             font-size: 12px;
             font-weight: normal; }
-          #box #nav .container h3.classify ul li p:nth-child(2n) a:nth-child(6) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n) a:nth-child(6) {
             font-size: 12px;
             font-weight: normal; }
-          #box #nav .container h3.classify ul li p:nth-child(2n) a:nth-child(7) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n) a:nth-child(7) {
             font-size: 12px;
             font-weight: normal; }
-          #box #nav .container h3.classify ul li p:nth-child(2n) a:nth-child(8) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n) a:nth-child(8) {
             font-size: 12px;
             font-weight: normal; }
-          #box #nav .container h3.classify ul li p:nth-child(2n) a:nth-child(9) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n) a:nth-child(9) {
             font-size: 12px;
             font-weight: normal; }
-          #box #nav .container h3.classify ul li p:nth-child(2n) a:nth-child(10) {
+          #box #nav .container h3.classify ul.classify_ul li p:nth-child(2n) a:nth-child(10) {
             font-size: 12px;
             font-weight: normal; }
-          #box #nav .container h3.classify ul li:hover {
+          #box #nav .container h3.classify ul.classify_ul li:hover {
             background: #fff; }
-            #box #nav .container h3.classify ul li:hover p > a {
+            #box #nav .container h3.classify ul.classify_ul li:hover p > a {
               color: #333; }
+        #box #nav .container h3.classify ul.classify_ul li:nth-child(3) .li_classify {
+          top: -106px; }
+        #box #nav .container h3.classify ul.classify_ul li:nth-child(4) .li_classify {
+          top: -158px; }
+        #box #nav .container h3.classify ul.classify_ul li:nth-child(5) .li_classify {
+          top: -210px; }
+        #box #nav .container h3.classify ul.classify_ul li:nth-child(6) .li_classify {
+          top: -262px; }
+        #box #nav .container h3.classify ul.classify_ul li:nth-child(7) .li_classify {
+          top: -314px; }
+        #box #nav .container h3.classify ul.classify_ul li:nth-child(8) .li_classify {
+          top: -366px; }
+        #box #nav .container h3.classify ul.classify_ul li:nth-child(9) .li_classify {
+          top: -418px; }
     #box #nav .container ul.nav_ul {
       margin-left: 220px; }
       #box #nav .container ul.nav_ul li {
@@ -289,7 +330,6 @@
     border-top: 2px solid #E91455; }
     #box #banner .xcarousel {
       position: relative;
-      width: 100%;
       height: 480px;
       overflow: hidden; }
       #box #banner .xcarousel ul {
@@ -326,19 +366,154 @@
           cursor: pointer; }
         #box #banner .xcarousel .page span.active {
           background: #E91455; }
-  #box #hotPlay .container h4 {
-    width: 170px;
-    height: 50px;
-    font-weight: normal; }
-    #box #hotPlay .container h4 a {
-      font-size: 18px;
-      font-family: "微软雅黑";
-      color: #333;
-      line-height: 50px; }
-    #box #hotPlay .container h4 a:hover {
-      color: #e91456; }
-    #box #hotPlay .container h4 a:last-child {
-      padding-left: 10px; }
+  #box #hotPlay .container {
+    margin: 0 36px; }
+    #box #hotPlay .container a:hover {
+      color: #E91455;
+      text-decoration: underline; }
+    #box #hotPlay .container h4 {
+      width: 170px;
+      height: 50px;
+      font-weight: normal; }
+      #box #hotPlay .container h4 a {
+        font-size: 20px;
+        font-family: "微软雅黑";
+        color: #333;
+        line-height: 50px; }
+      #box #hotPlay .container h4 a:hover {
+        color: #e91456; }
+      #box #hotPlay .container h4 a:last-child {
+        padding-left: 10px; }
+    #box #hotPlay .container .hot {
+      height: 384px; }
+      #box #hotPlay .container .hot p.p1 {
+        float: left;
+        height: 330px; }
+    #box #hotPlay .container .recommend {
+      height: 384px; }
+      #box #hotPlay .container .recommend p.p2 {
+        float: left;
+        height: 330px; }
+      #box #hotPlay .container .recommend p.sale {
+        float: right;
+        padding-right: 10px;
+        color: #E91455;
+        font-size: 12px; }
+    #box #hotPlay .container .hotlist {
+      float: left;
+      height: 330px; }
+      #box #hotPlay .container .hotlist ul {
+        overflow: hidden;
+        margin-left: 20px; }
+        #box #hotPlay .container .hotlist ul li {
+          float: left;
+          height: 330px;
+          width: 230px;
+          border: 1px solid #F8F8F8;
+          margin-right: 15px; }
+          #box #hotPlay .container .hotlist ul li p:first-child {
+            line-height: 24px;
+            text-align: center;
+            color: #E91455; }
+          #box #hotPlay .container .hotlist ul li img {
+            width: 228px;
+            height: 228px; }
+          #box #hotPlay .container .hotlist ul li p.title {
+            padding: 24px 0 0 10px;
+            font-size: 12px; }
+            #box #hotPlay .container .hotlist ul li p.title a {
+              color: #444; }
+            #box #hotPlay .container .hotlist ul li p.title a:hover {
+              color: #E91455;
+              text-decoration: underline; }
+          #box #hotPlay .container .hotlist ul li p.price {
+            color: #444;
+            padding: 10px 0 0 10px;
+            color: #E91455; }
+        #box #hotPlay .container .hotlist ul li:hover {
+          border: 1px solid #ddd; }
+    #box #hotPlay .container .hotlist1 ul li p:first-child {
+      position: relative; }
+    #box #hotPlay .container .hotlist1 ul li p:first-child:before {
+      content: '';
+      display: block;
+      height: 50px;
+      width: 38px;
+      background: url("../img/img.fw.png") -449px -102px;
+      position: absolute;
+      top: 23px;
+      left: 0; }
+    #box #hotPlay .container .hotlist3 {
+      float: left;
+      height: 520px;
+      width: 600px; }
+      #box #hotPlay .container .hotlist3 ul li {
+        padding-left: 5px;
+        width: 177px;
+        height: 260px; }
+        #box #hotPlay .container .hotlist3 ul li img {
+          width: 167px;
+          height: 167px; }
+      #box #hotPlay .container .hotlist3 ul li:nth-child(4) {
+        padding-top: 3px; }
+        #box #hotPlay .container .hotlist3 ul li:nth-child(4) p:last-child {
+          padding-top: 20px; }
+      #box #hotPlay .container .hotlist3 ul li:nth-child(5) {
+        padding-top: 3px; }
+        #box #hotPlay .container .hotlist3 ul li:nth-child(5) p:last-child {
+          padding-top: 20px; }
+      #box #hotPlay .container .hotlist3 ul li:nth-child(6) {
+        padding-top: 3px; }
+        #box #hotPlay .container .hotlist3 ul li:nth-child(6) p:last-child {
+          padding-top: 20px; }
+    #box #hotPlay .container .clothes h4 {
+      padding-left: 40px;
+      position: relative; }
+      #box #hotPlay .container .clothes h4 i {
+        display: block;
+        height: 48px;
+        width: 39px;
+        background: url("../img/img.fw.png") -143px -160px;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #box #hotPlay .container .clothes p.p3 {
+      float: left; }
+    #box #hotPlay .container .clothes .left {
+      float: left; }
+      #box #hotPlay .container .clothes .left ul {
+        background: #FDF4F7;
+        height: 130px;
+        width: 190px; }
+        #box #hotPlay .container .clothes .left ul li {
+          padding: 12px; }
+          #box #hotPlay .container .clothes .left ul li a {
+            color: #444;
+            font-size: 12px;
+            padding-right: 20px; }
+          #box #hotPlay .container .clothes .left ul li a:hover {
+            color: #E91455;
+            text-decoration: underline; }
+    #box #hotPlay .container .makeUp h4 i {
+      background-position: -203px -163px; }
+    #box #hotPlay .container .makeUp .left ul li {
+      padding: 12px; }
+      #box #hotPlay .container .makeUp .left ul li a {
+        padding-right: 5px; }
+    #box #hotPlay .container .hotlist4 ul li:nth-child(4) {
+      padding-top: 0px; }
+      #box #hotPlay .container .hotlist4 ul li:nth-child(4) p:last-child {
+        padding-top: 8px; }
+    #box #hotPlay .container .hotlist4 ul li:nth-child(5) {
+      padding-top: 0px; }
+      #box #hotPlay .container .hotlist4 ul li:nth-child(5) p:last-child {
+        padding-top: 8px; }
+    #box #hotPlay .container .hotlist4 ul li:nth-child(6) {
+      padding-top: 0px; }
+      #box #hotPlay .container .hotlist4 ul li:nth-child(6) p:last-child {
+        padding-top: 8px; }
+    #box #hotPlay .container .hotlist4 ul li:nth-child(5) p:last-child {
+      padding-top: 20px; }
   #box #guodu {
     height: 600px;
     width: 100%;
