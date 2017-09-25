@@ -1,12 +1,9 @@
 <?php
+    // post请求
     $pageNo = isset($_REQUEST['pageNo']) ? $_REQUEST['pageNo'] : 1;
-    $qty = isset($_REQUEST['qty']) ? $_REQUEST['qty'] : 10; 
+    $qty = isset($_REQUEST['qty']) ? $_REQUEST['qty'] : 4; 
 
-    // 读取文件
-    // 1.打开文件
-    // 2.读取内容
-    //      * filesize()
-    $file_path = 'data/hotSale.json';
+    $file_path = 'data/hotSale_all.json';
 
     $file = fopen($file_path, 'r');
 
@@ -27,8 +24,6 @@
         'pageNo' => $pageNo,
         'qty' => $qty
     );
-
-
     // 把相应的数据传给前端
     echo json_encode($res,JSON_UNESCAPED_UNICODE);
 
