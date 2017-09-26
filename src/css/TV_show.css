@@ -1,0 +1,10 @@
+#box #classify ul {
+  height: 117px; }
+  #box #classify ul li {
+    width: 281px;
+    height: 95px;
+    float: left; }
+
+#box #guodu {
+  height: 800px;
+  border: 1px solid #ddd; }

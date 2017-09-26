@@ -164,9 +164,3 @@
 		return this;
 	}
 })(jQuery);
-
-
-
-
-
-// $('.box').xCarousel();

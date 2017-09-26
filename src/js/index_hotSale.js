@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded',function(){
         // 当前ul
         var pageNo = 1;
         // 每个ul显示数量
-        xajax.post('api/hotSale.php?pageNo='+pageNo).then(function(res){
+        xajax.post('api/index_hotSale.php?pageNo='+pageNo).then(function(res){
             var ul = document.createElement('ul');
             ul.innerHTML = res.data.map(item=>{
                 return `<li>
-                        <p>${item.time}</p>
+                        <p>${item.left_time}</p>
                         <img src="${item.imgurl}">
                         <p class="title"><a href="#">${item.title}</a></p>
                         <p class="price">￥${item.price}</p>
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded',function(){
        
        var pageNo = 2;
         // 每个ul显示数量
-        xajax.post('api/hotSale.php?pageNo='+pageNo).then(function(res){
+        xajax.post('api/index_hotSale.php?pageNo='+pageNo).then(function(res){
             var ul = document.createElement('ul');
             ul.innerHTML = res.data.map(item=>{
                 return `<li>
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded',function(){
         // var qty = 4;
         // 每个ul显示数量
         function hotSale(i){
-            xajax.post('api/hotSale.php?qty=6&pageNo='+pageNo).then(function(res){
+            xajax.post('api/index_hotSale.php?qty=6&pageNo='+pageNo).then(function(res){
                     var ul = document.createElement('ul');
                     ul.innerHTML = res.data.map(item=>{
                         return `<li>
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded',function(){
         var pageNo = 46;
         hotSale_left(9);
         function hotSale_left(i){
-            xajax.post('api/hotSale.php?qty=1&pageNo='+pageNo).then(function(res){
+            xajax.post('api/index_hotSale.php?qty=1&pageNo='+pageNo).then(function(res){
                 var a = document.createElement('a');
                 a.innerHTML = res.data.map(item=>{
                     return `
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded',function(){
         //广告位的图片
         var long_ad = document.querySelector('.ad');
         var pageNo = 47;
-        xajax.post('api/hotSale.php?qty=1&pageNo='+pageNo).then(function(res){
+        xajax.post('api/index_hotSale.php?qty=1&pageNo='+pageNo).then(function(res){
                 long_ad.innerHTML = res.data.map(item=>{
                     return `
                         <img src="${item.imgurl}">

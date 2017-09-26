@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <title>嘉丽购-嘉丽购电视购物官网</title>
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script src="lib/jquery-3.1.1.js"></script>
-    <script src="lib/jquery-banner.js"></script>
-    <script src="js/index.js"></script>
-    <script src="lib/xajax.js"></script>
-    <script src="js/hotSale.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fruits.css" />
+    <script src="../lib/jquery-3.1.1.js"></script>
+    <script src="../lib/jquery-banner.js"></script>
+    <script src="../js/fruits.js"></script>
+    <script src="../lib/all_ajax.js"></script>
+    <script src="../js/fruits_ajax.js"></script>
 </head>
 <body>
     <div id="box">
@@ -457,24 +458,76 @@
                 </h3>
                 <ul class="nav_ul clearfix">
                     <li><a href="#">首页</a><span></span></li>
-                    <li><a href="#">TV直播</a><span></span></li>
-                    <li><a href="#">水果生鲜</a><span></span></li>
-                    <li><a href="#">家具商城</a></li>
+                    <li><a href="html/TV_Show.html">TV直播</a><span></span></li>
+                    <li><a href="html/Fruits.html">水果生鲜</a><span></span></li>
+                    <li><a href="html/ Furniture.html">家具商城</a></li>
                     <li>订购热线<span>400-630-0077</span>
-                        <ul>
-                            <li><h3><a href="#">正在直播</h3></a><p>[17:00-17:19]<p></li>
-                            <li><img src="img/banner_ad2.jpg" alt="" /></li>
-                            <li><a href="#">FaSoLa软底居家拖鞋换季开仓组</a><p><span>￥</span><span>99</span></p></li>
-                            <li><h4>嘉书</h4></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
         <div id="banner">
-            <div class="banner"></div>
+            <div class="container">
+                <div class="banner"></div>
+            </div>
         </div>
-        <div id="guodu"></div>
+        <div id="fruits_top">
+            <div class="container">
+                <div class="fruits_ul"></div>
+            </div>
+        </div>
+        <div id="recommed">
+            <div class="container clearfix">
+                <!-- 新品推荐 -->
+                <div class="left clearfix">
+                    <div class="top clearfix">
+                        <h3>新品推荐</h3>
+                        <a href="#">查看更多<span>></span></a>
+                    </div>
+                    <p class="fruits_left"></p>
+                    <div id="fruits_list"></div>
+                </div>
+                <div id="fruits_right" class="right_img"></div>
+                <!-- 热销推荐 -->
+                <div class="left clearfix">
+                    <div class="top clearfix">
+                        <h3>热销推荐</h3>
+                        <a href="#">查看更多<span>></span></a>
+                    </div>
+                    <p class="fruits_left">
+                    </p>
+                    <div id="fruits_list"></div>
+                </div>
+                <div id="fruits_right" class="right_img">
+                </div>
+                <!-- 优惠专区 -->
+                <div class="left clearfix">
+                    <div class="top clearfix">
+                        <h3>优惠专区</h3>
+                        <a href="#">查看更多<span>></span></a>
+                    </div>
+                    <p class="fruits_left"></p>
+                    <div id="fruits_list"></div>
+                </div>
+                <div id="fruits_right">
+                    <!-- 热销排行 -->
+                    <div class="saleRank">
+                        <p>热销排行</p>
+                        <ul></ul>
+                    </div>
+                </div>
+                 <!-- 厂家推荐 -->
+                <div class="left clearfix">
+                    <div class="top clearfix">
+                        <h3>厂家推荐</h3>
+                        <a href="#">查看更多<span>></span></a>
+                    </div>
+                    <div id="fruits_list"></div>
+                </div>
+                <div id="fruits_right">
+                </div>
+            </div>
+        </div>
         <div id="links">
             <div class="container">
                 <div id="top" class="clearfix">

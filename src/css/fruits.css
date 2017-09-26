@@ -1,0 +1,154 @@
+#box #nav .container .classify .classify_ul {
+  display: none; }
+
+#box #banner .container {
+  border: 1px solid #ccc;
+  height: 482px;
+  border-top: 2px solid #E91455; }
+  #box #banner .container .xcarousel {
+    position: relative;
+    height: 480px;
+    overflow: hidden; }
+    #box #banner .container .xcarousel ul {
+      position: absolute;
+      left: 0;
+      top: 0;
+      overflow: hidden; }
+    #box #banner .container .xcarousel ul.horizontal li {
+      float: left; }
+    #box #banner .container .xcarousel ul.fade li {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #box #banner .container .xcarousel img {
+      display: block;
+      width: 100%;
+      height: 480px; }
+    #box #banner .container .xcarousel .page {
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      transform: translateX(-50%); }
+      #box #banner .container .xcarousel .page span {
+        display: inline-block;
+        text-align: center;
+        line-height: 22px;
+        color: #fff;
+        width: 22px;
+        height: 22px;
+        overflow: hidden;
+        background: #1B1B1B;
+        border-radius: 50%;
+        margin: 0 6px; }
+      #box #banner .container .xcarousel .page span:hover {
+        cursor: pointer; }
+      #box #banner .container .xcarousel .page span.active {
+        background: #E91455; }
+
+#box #fruits_top .container {
+  padding-top: 24px; }
+  #box #fruits_top .container .fruits_ul ul {
+    height: 143px;
+    overflow: hidden; }
+    #box #fruits_top .container .fruits_ul ul li {
+      height: 143px;
+      width: 396px;
+      float: left;
+      overflow: hidden;
+      border: 1px solid #F5F5F5; }
+      #box #fruits_top .container .fruits_ul ul li p {
+        float: left;
+        height: 143px;
+        width: 196px; }
+        #box #fruits_top .container .fruits_ul ul li p:first-child span {
+          display: block; }
+          #box #fruits_top .container .fruits_ul ul li p:first-child span:first-child {
+            color: #E91456;
+            font-size: 34px;
+            padding: 10px 0 0 10px; }
+            #box #fruits_top .container .fruits_ul ul li p:first-child span:first-child i {
+              font-style: normal; }
+        #box #fruits_top .container .fruits_ul ul li p:first-child a {
+          font-size: 12px;
+          text-align: center;
+          display: block;
+          padding: 40px 0 0 34px; }
+        #box #fruits_top .container .fruits_ul ul li p:first-child a:hover {
+          color: #E70044;
+          text-decoration: underline; }
+        #box #fruits_top .container .fruits_ul ul li p:nth-child(2) a {
+          height: 143px;
+          width: 143px;
+          display: block; }
+          #box #fruits_top .container .fruits_ul ul li p:nth-child(2) a img {
+            height: 143px;
+            width: 143px; }
+        #box #fruits_top .container .fruits_ul ul li p:nth-child(2):nth-child(2) {
+          padding-left: 24px; }
+
+#box #recommed .container {
+  padding-bottom: 10px; }
+  #box #recommed .container .left {
+    width: 980px;
+    float: left; }
+    #box #recommed .container .left .top {
+      height: 42px;
+      border-bottom: 2px solid #E91456; }
+      #box #recommed .container .left .top h3 {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 42px;
+        float: left; }
+      #box #recommed .container .left .top a {
+        display: block;
+        float: right;
+        line-height: 42px;
+        color: #444; }
+      #box #recommed .container .left .top span {
+        color: #E70044; }
+      #box #recommed .container .left .top a:hover {
+        color: #E70044;
+        text-decoration: underline; }
+    #box #recommed .container .left p {
+      padding-top: 6px;
+      float: left; }
+    #box #recommed .container .left #fruits_list {
+      float: left; }
+      #box #recommed .container .left #fruits_list ul {
+        overflow: hidden; }
+        #box #recommed .container .left #fruits_list ul li {
+          float: left;
+          width: 228px;
+          height: 326px;
+          padding-top: 6px;
+          margin-left: 14px; }
+          #box #recommed .container .left #fruits_list ul li img {
+            height: 228px;
+            width: 228px; }
+          #box #recommed .container .left #fruits_list ul li a {
+            color: #444;
+            font-size: 12px; }
+          #box #recommed .container .left #fruits_list ul li a:hover {
+            color: #E70044;
+            text-decoration: underline; }
+          #box #recommed .container .left #fruits_list ul li span:nth-child(2) {
+            display: block;
+            height: 50px;
+            font-size: 20px;
+            color: #e91456;
+            line-height: 60px; }
+  #box #recommed .container #fruits_right {
+    float: right;
+    width: 190px;
+    height: 326px; }
+  #box #recommed .container .saleRank {
+    float: right; }
+    #box #recommed .container .saleRank p {
+      width: 190px;
+      height: 40px;
+      background: #eee;
+      padding: 10px 0 0 24px; }
+    #box #recommed .container .saleRank ul {
+      width: 190px;
+      height: 12px;
+      border: 1px solid #E8E8E7; }
