@@ -96,5 +96,15 @@ document.addEventListener('DOMContentLoaded',function(){
                 }).join('');
                 img_hot[i].appendChild(a);
             });
-        }    
+        }   
+        //广告位的图片
+        var long_ad = document.querySelector('.ad');
+        var pageNo = 47;
+        xajax.post('api/hotSale.php?qty=1&pageNo='+pageNo).then(function(res){
+                long_ad.innerHTML = res.data.map(item=>{
+                    return `
+                        <img src="${item.imgurl}">
+                        `;
+                }).join(''); 
+        });
     });
