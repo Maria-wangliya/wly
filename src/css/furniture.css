@@ -1,0 +1,147 @@
+#box #classify {
+  border-top: 2px solid #E91455; }
+  #box #classify .container {
+    border: 1px solid #CEA972;
+    background: #F6E9D9; }
+    #box #classify .container ul {
+      height: 117px;
+      padding-top: 10px; }
+      #box #classify .container ul li {
+        width: 297px;
+        height: 95px;
+        float: left;
+        padding: 10px 0 0 40px;
+        border-right: 1px dashed #CEA972; }
+        #box #classify .container ul li p {
+          padding-left: 80px;
+          font-size: 12px;
+          font-weight: bold; }
+        #box #classify .container ul li a {
+          font-size: 12px;
+          display: inline-block;
+          color: #000000;
+          width: 80px;
+          padding-top: 6px; }
+        #box #classify .container ul li a:hover {
+          color: #E91456;
+          text-decoration: underline; }
+        #box #classify .container ul li:last-child {
+          border: 0 none; }
+
+#box #main .container {
+  padding: 10px 0; }
+  #box #main .container .left {
+    float: left; }
+    #box #main .container .left p img {
+      width: 345px;
+      height: 459px; }
+    #box #main .container .left ul {
+      width: 345px;
+      height: 175px;
+      background: #F6E9D9;
+      margin-top: 6px; }
+      #box #main .container .left ul li {
+        height: 58px;
+        width: 115px;
+        float: left;
+        border: 1px solid #CEA972;
+        text-align: center; }
+        #box #main .container .left ul li a {
+          color: #444;
+          line-height: 58px;
+          font-size: 12px; }
+        #box #main .container .left ul li a:hover {
+          text-decoration: underline;
+          color: #E91456; }
+        #box #main .container .left ul li:nth-child(1) {
+          border-right: 0 none; }
+        #box #main .container .left ul li:nth-child(2) {
+          border-right: 0 none; }
+        #box #main .container .left ul li:nth-child(3) {
+          border-right: 0 none; }
+        #box #main .container .left ul li:nth-child(4) {
+          border-right: 0 none; }
+        #box #main .container .left ul li:nth-child(5) {
+          border-right: 0 none; }
+        #box #main .container .left ul li:nth-child(6) {
+          border-right: 0 none; }
+        #box #main .container .left ul li:nth-child(7) {
+          border-right: 0 none; }
+        #box #main .container .left ul li:nth-child(8) {
+          border-right: 0 none; }
+        #box #main .container .left ul li:nth-child(9) {
+          border-right: 0 none; }
+        #box #main .container .left ul li:nth-child(3n) {
+          border-right: 1px solid #CEA972; }
+        #box #main .container .left ul li:nth-child(4) {
+          border-top: 0 none; }
+        #box #main .container .left ul li:nth-child(5) {
+          border-top: 0 none; }
+        #box #main .container .left ul li:nth-child(6) {
+          border-top: 0 none; }
+        #box #main .container .left ul li:nth-child(7) {
+          border-top: 0 none; }
+        #box #main .container .left ul li:nth-child(8) {
+          border-top: 0 none; }
+        #box #main .container .left ul li:nth-child(9) {
+          border-top: 0 none; }
+
+#box #recommend .container {
+  padding-bottom: 30px; }
+  #box #recommend .container h3 {
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom: 2px solid #E91456; }
+  #box #recommend .container #suite ul {
+    padding-top: 10px; }
+    #box #recommend .container #suite ul li {
+      height: 315px;
+      width: 285px;
+      float: left;
+      margin-right: 12px; }
+      #box #recommend .container #suite ul li img {
+        width: 285px;
+        height: 265px; }
+      #box #recommend .container #suite ul li p a {
+        color: #444;
+        font-size: 12px;
+        line-height: 30px;
+        display: block; }
+      #box #recommend .container #suite ul li h4 span:first-child {
+        color: #FF0000;
+        font-size: 12px;
+        display: block;
+        float: left; }
+      #box #recommend .container #suite ul li h4 span:nth-child(2) {
+        font-size: 12px;
+        display: block;
+        float: right; }
+  #box #recommend .container .suite_left {
+    padding-top: 10px; }
+    #box #recommend .container .suite_left p:first-child {
+      width: 345px;
+      height: 460px; }
+    #box #recommend .container .suite_left p:last-child {
+      width: 345px;
+      height: 180px; }
+  #box #recommend .container .suite2 {
+    padding-top: 10px; }
+    #box #recommend .container .suite2 ul li {
+      float: left;
+      height: 315px;
+      width: 200px; }
+      #box #recommend .container .suite2 ul li img {
+        width: 200px;
+        height: 180px; }
+  #box #recommend .container #hot_place p {
+    padding: 10px 0; }
+    #box #recommend .container #hot_place p img {
+      width: 185px;
+      height: 185px; }
+  #box #recommend .container #new_goods p {
+    padding: 10px 0; }
+    #box #recommend .container #new_goods p img {
+      height: 185px;
+      width: 185px; }

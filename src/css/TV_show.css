@@ -1,10 +1,313 @@
-#box #classify ul {
-  height: 117px; }
-  #box #classify ul li {
-    width: 281px;
-    height: 95px;
-    float: left; }
+#box #nav {
+  border-bottom: 2px solid #E91455; }
 
-#box #guodu {
-  height: 800px;
-  border: 1px solid #ddd; }
+#box #play .container .left {
+  float: left;
+  width: 276px;
+  border: 1px solid #E8E8E7; }
+  #box #play .container .left p {
+    color: #E91456;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px 0 0 15px;
+    border-bottom: 1px solid #E8E8E7; }
+  #box #play .container .left .playList ul.play_ul {
+    width: 278px;
+    height: 360px;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+    #box #play .container .left .playList ul.play_ul li a {
+      display: block;
+      padding-left: 10px;
+      line-height: 28px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+      #box #play .container .left .playList ul.play_ul li a span {
+        font-size: 12px;
+        color: #444; }
+    #box #play .container .left .playList ul.play_ul li .li_div {
+      width: 278px; }
+      #box #play .container .left .playList ul.play_ul li .li_div div:first-child {
+        padding-left: 8px;
+        background: #E91456;
+        border-bottom: 1px solid #fff; }
+        #box #play .container .left .playList ul.play_ul li .li_div div:first-child span {
+          color: #fff;
+          line-height: 32px;
+          height: 32px;
+          display: inline-block; }
+          #box #play .container .left .playList ul.play_ul li .li_div div:first-child span:first-child {
+            font-size: 14px;
+            font-weight: bold;
+            padding-right: 20px; }
+          #box #play .container .left .playList ul.play_ul li .li_div div:first-child span:nth-child(2) {
+            font-size: 12px;
+            position: relative; }
+          #box #play .container .left .playList ul.play_ul li .li_div div:first-child span:nth-child(2):after {
+            content: '';
+            display: block;
+            height: 18px;
+            width: 18px;
+            background: url("../img/img.fw.png") 0 -40px;
+            position: absolute;
+            top: 8px;
+            left: 120px; }
+      #box #play .container .left .playList ul.play_ul li .li_div div:nth-child(2) {
+        width: 95px;
+        height: 108px;
+        background: #eee;
+        padding: 8px 6px;
+        float: left; }
+        #box #play .container .left .playList ul.play_ul li .li_div div:nth-child(2) img {
+          height: 92px;
+          width: 92px; }
+      #box #play .container .left .playList ul.play_ul li .li_div div:nth-child(3) {
+        width: 183px;
+        height: 108px;
+        background: #eee;
+        padding: 8px 0px;
+        float: left; }
+        #box #play .container .left .playList ul.play_ul li .li_div div:nth-child(3) a {
+          display: block;
+          width: 170px;
+          font-size: 12px;
+          color: #444;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+        #box #play .container .left .playList ul.play_ul li .li_div div:nth-child(3) span {
+          color: #E91456;
+          font-size: 12px;
+          display: block;
+          padding-left: 10px; }
+        #box #play .container .left .playList ul.play_ul li .li_div div:nth-child(3) button {
+          background: #f3f3f3;
+          border: 0 none;
+          border: 1px solid #d0d0d0;
+          height: 34px;
+          line-height: 34px;
+          color: #333;
+          padding: 0 12px;
+          margin: 14px 0 0 10px; }
+        #box #play .container .left .playList ul.play_ul li .li_div div:nth-child(3) button:hover {
+          cursor: pointer;
+          background: #F8F8F8; }
+    #box #play .container .left .playList ul.play_ul li .li_white {
+      width: 0;
+      height: 0; }
+      #box #play .container .left .playList ul.play_ul li .li_white div {
+        height: 0;
+        width: 0;
+        color: #fff; }
+        #box #play .container .left .playList ul.play_ul li .li_white div a {
+          color: #fff; }
+      #box #play .container .left .playList ul.play_ul li .li_white img, #box #play .container .left .playList ul.play_ul li .li_white button {
+        display: none; }
+    #box #play .container .left .playList ul.play_ul li:hover {
+      cursor: pointer; }
+
+#box #play .container .vedio {
+  width: 654px;
+  height: 402px;
+  float: left; }
+
+#box #play .container .right {
+  width: 250px;
+  float: left;
+  border: 1px solid #E8E8E7;
+  height: 402px; }
+  #box #play .container .right p {
+    width: 250px;
+    font-size: 18px;
+    color: #E91456; }
+    #box #play .container .right p:first-child {
+      height: 40px;
+      padding: 5px 0 0 15px;
+      border-bottom: 1px solid #E8E8E7; }
+    #box #play .container .right p:nth-child(2) p {
+      height: 240px; }
+    #box #play .container .right p:nth-child(2) img {
+      padding: 10px 0 0 10px;
+      width: 240px;
+      height: 240px; }
+    #box #play .container .right p:nth-child(3) a {
+      font-size: 12px;
+      color: #444;
+      padding-left: 10px; }
+    #box #play .container .right p:nth-child(3) a:hover {
+      text-decoration: underline;
+      color: #e91456; }
+  #box #play .container .right span {
+    font-size: 20px;
+    color: #e91456;
+    display: block;
+    text-align: center;
+    padding-top: 60px; }
+
+#box #main .container {
+  height: 2180px;
+  padding-bottom: 10px; }
+  #box #main .container h3 {
+    font-family: "Microsoft Yahei";
+    font-size: 17px;
+    line-height: 50px;
+    font-weight: normal;
+    padding: 5px 5px 5px 15px;
+    border-bottom: 1px solid #E8E8E7; }
+  #box #main .container .date {
+    height: 50px;
+    border-bottom: 1px solid #E8E8E7; }
+    #box #main .container .date ul.date_ul {
+      padding-top: 12px; }
+      #box #main .container .date ul.date_ul li {
+        float: left;
+        line-height: 20px;
+        font-size: 12px; }
+        #box #main .container .date ul.date_ul li a {
+          color: #444;
+          font-size: 12px; }
+        #box #main .container .date ul.date_ul li a:hover {
+          text-decoration: underline;
+          color: #E91456;
+          cursor: pointer; }
+        #box #main .container .date ul.date_ul li:first-child {
+          color: #444;
+          width: 44px; }
+        #box #main .container .date ul.date_ul li:nth-child(2) {
+          width: 176px;
+          margin-right: 10px; }
+          #box #main .container .date ul.date_ul li:nth-child(2) a {
+            display: block; }
+            #box #main .container .date ul.date_ul li:nth-child(2) a:first-child {
+              float: left; }
+            #box #main .container .date ul.date_ul li:nth-child(2) a:last-child {
+              float: right; }
+        #box #main .container .date ul.date_ul li:nth-child(3) {
+          width: 220px;
+          position: relative; }
+          #box #main .container .date ul.date_ul li:nth-child(3) input {
+            padding-left: 6px;
+            width: 100px;
+            height: 25px;
+            position: relative; }
+          #box #main .container .date ul.date_ul li:nth-child(3) i {
+            display: block;
+            height: 16px;
+            width: 16px;
+            background: url("../img/img.fw.png") 0 -85px;
+            position: absolute;
+            top: 4px;
+            left: 82px; }
+          #box #main .container .date ul.date_ul li:nth-child(3) i.i2 {
+            display: block;
+            height: 16px;
+            width: 16px;
+            background: url("../img/img.fw.png") 0 -85px;
+            position: absolute;
+            top: 4px;
+            left: 195px; }
+          #box #main .container .date ul.date_ul li:nth-child(3) .date_start {
+            display: none;
+            position: absolute;
+            width: 200px;
+            height: 160px;
+            z-index: 9999;
+            background: #F7F2F7; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start #schedule-box {
+              margin: 0 auto;
+              font-size: 12px; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .schedule-hd {
+              background: #eee;
+              overflow: hidden; }
+              #box #main .container .date ul.date_ul li:nth-child(3) .date_start .schedule-hd div {
+                width: 60px;
+                float: left;
+                text-align: center;
+                padding: 6px 0px; }
+                #box #main .container .date ul.date_ul li:nth-child(3) .date_start .schedule-hd div:nth-child(2) {
+                  width: 68px; }
+                #box #main .container .date ul.date_ul li:nth-child(3) .date_start .schedule-hd div:last-child {
+                  float: right; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .today {
+              height: 30px;
+              font-size: 12px;
+              text-align: center; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .ul-box {
+              overflow: hidden; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .ul-box > li {
+              float: left;
+              width: 13%;
+              text-align: center; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .other-month {
+              color: #999999; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .current-month {
+              color: #333333; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .today-style {
+              border-radius: 50%;
+              background: #58d321; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .arrow {
+              cursor: pointer; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .dayStyle {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              text-align: center;
+              line-height: 20px;
+              line-height: 20px;
+              cursor: pointer; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .current-month > .dayStyle:hover {
+              background: #00BDFF;
+              color: #ffffff; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .today-flag {
+              background: #00C2B1;
+              color: #fff; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start .selected-style {
+              background: #00BDFF;
+              color: #ffffff; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start #h3Ele {
+              border: 0 none;
+              text-align: center; }
+            #box #main .container .date ul.date_ul li:nth-child(3) .date_start span {
+              font-size: 14px; }
+        #box #main .container .date ul.date_ul li:nth-child(4) {
+          width: 80px; }
+        #box #main .container .date ul.date_ul li:nth-child(5) {
+          width: 200px;
+          float: right; }
+          #box #main .container .date ul.date_ul li:nth-child(5) a {
+            display: inline-block;
+            padding: 0 10px; }
+          #box #main .container .date ul.date_ul li:nth-child(5) span {
+            font-size: 12px; }
+  #box #main .container .goodsList ul li {
+    float: left;
+    padding: 10px 0 0 10px;
+    width: 230px;
+    height: 337px; }
+    #box #main .container .goodsList ul li img {
+      height: 210px;
+      width: 210px; }
+    #box #main .container .goodsList ul li a {
+      font-size: 12px;
+      color: #444;
+      line-height: 40px; }
+    #box #main .container .goodsList ul li a:hover {
+      text-decoration: underline;
+      color: #EC316B; }
+    #box #main .container .goodsList ul li span {
+      display: block;
+      color: #e91456; }
+    #box #main .container .goodsList ul li button {
+      background: #f3f3f3;
+      border: 0 none;
+      border: 1px solid #d0d0d0;
+      height: 34px;
+      line-height: 34px;
+      color: #333;
+      padding: 0 12px;
+      margin-left: 60px; }
+    #box #main .container .goodsList ul li button:hover {
+      cursor: pointer;
+      background: #FAF7F7; }

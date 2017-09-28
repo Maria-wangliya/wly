@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <title>嘉丽购-嘉丽购电视购物官网</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_234130_nem7eskcrkpdgqfr.css">
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/common.css" />
     <link rel="stylesheet" type="text/css" href="../css/TV_show.css" />
+    <script type="text/javascript" src="../lib/all_ajax.js"></script>
+    <script type="text/javascript" src="../js/TV_Show.js"></script>
+    <script src="../js/schedule.js"></script>
 </head>
 <body>
     <div id="box">
@@ -52,64 +56,61 @@
                 </ul>
             </div>
         </div>
-        <div id="banner">
-            <div class="banner"></div>
-        </div>
-        <div id="classify">
-            <div class="container">
-                <ul class="clearfix">
-                    <li>    
-                        <p>客厅家具</p>
-                        <a href="#">沙发</a>
-                        <a href="#">电视柜</a>
-                        <a href="#">客厅套组</a>
-                        <a href="#">茶几</a>
-                        <a href="#">朋式沙发</a>
-                        <a href="#">真皮沙发</a>
-                        <a href="#">布艺沙发</a>
-                        <a href="#">鞋柜</a>
-                        <a href="#">单人沙发</a>
-                    </li>
-                    <li>
-                        <p>卧室家具</p>
-                        <a href="#">双人床</a>
-                        <a href="#">实木床</a>
-                        <a href="#">软床</a>
-                        <a href="#">床垫</a>
-                        <a href="#">衣柜</a>
-                        <a href="#">床头垫</a>
-                        <a href="#">实木衣柜</a>
-                        <a href="#">单人床</a>
-                        <a href="#">欧式床</a>
-                    </li>
-                    <li>
-                        <p>餐厅家具</p>
-                        <a href="#">餐桌</a>
-                        <a href="#">餐椅</a>
-                        <a href="#">欧式餐桌</a>
-                        <a href="#">圆桌</a>
-                        <a href="#">方桌</a>
-                        <a href="#">折叠餐桌</a>
-                        <a href="#">实木餐桌</a>
-                        <a href="#">现代餐桌</a>
-                        <a href="#">餐厅套组</a>
-                    </li>
-                    <li>
-                        <p>儿童家具</p>
-                        <a href="#">儿童床</a>
-                        <a href="#">双人床</a>
-                        <a href="#">上下床</a>
-                        <a href="#">高低床</a>
-                        <a href="#">儿童书桌</a>
-                        <a href="#">折叠餐桌</a>
-                        <a href="#">实木餐桌</a>
-                        <a href="#">现代餐桌</a>
-                        <a href="#">餐厅套组</a>
-                    </li>
-                </ul>
+        <div id="play">
+            <div class="container clearfix">
+                <div class="left">
+                    <p>今日直播</p>
+                    <div class="playList">
+                    </div>
+                </div>
+                <div class="vedio">
+                <!-- poster="http://jackzhang1204.github.io/materials/poster.png"  -->
+                    <video src="http://aodian.zhcsapp.cn/livetv/69jlg.m3u8?k=48c916a32ff84a1729f5d40064ab4328&amp;t=1506481060" autoplay="" style="width: 100%; height: 100%; background-color: rgb(0, 0, 0); pointer-events: none;">
+                    </video>
+                </div>
+                <div class="right">
+                </div>
             </div>
         </div>
-        <div id="guodu"></div>
+        <div id="main">
+            <div class="container">
+                <div class="top">
+                    <h3>历史播出</h3>
+                </div>
+                <div class="date">
+                    <ul class="date_ul">
+                        <form action="#" class="clearfix">
+                            <li>日期</li>
+                            <li class="clearfix">
+                                <a href="#">今日</a>
+                                <a href="#">昨日</a>
+                            </li>
+                            <li>
+                                <input type="text" class="txt_input" value="2017-09-27"><i></i>
+                                <div class="date_start">
+                                    <div id='schedule-box' class="boxshaw">
+                                    </div>
+                                </div>
+                                <span>-</span>
+                                <input type="text" class="txt_input2" value="2017-09-27"><i class="i2"></i>
+                                <div class="date_start">
+                                    <div id='schedule-box' class="boxshaw">
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">搜索</a></li>
+                            <li>
+                                <span>排序</span>
+                                <a href="#">按销量↓</a>
+                                <a href="#">按价格↓</a>
+                            </li>
+                        </form>
+                    </ul>
+                </div>
+                <div class="goodsList">
+                </div>
+            </div>
+        </div>
         <div id="links">
             <div class="container">
                 <div id="top" class="clearfix">
