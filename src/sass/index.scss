@@ -220,7 +220,6 @@
 	#banner{
 		border:1px solid #ccc;
 		height: 482px;
-		border-top:2px solid #E91455;
 		.xcarousel{
 			position:relative;height: 480px;overflow: hidden;
 			ul{
@@ -511,6 +510,27 @@
 				}
 			}
 		}
+	}
+	#ad{
+		position:fixed;
+		bottom:0;
+		left:0;
+		// width:100%;
+		z-index:9999;
+		img{
+			height: 158px;
+		}
+		span{
+			font-size:30px;
+			color:rgb(255, 255, 255);
+			position:absolute;
+			left:10px;
+			top:0;
+		}
+		span:hover{
+			cursor:pointer;
+		}
+
 	}
 }
 

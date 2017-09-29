@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <title>嘉丽购-嘉丽购电视购物官网</title>
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <link rel="stylesheet" type="text/css" href="css/common.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script src="lib/jquery-3.1.1.js"></script>
-    <script src="lib/jquery-banner.js"></script>
-    <script src="js/index.js"></script>
-    <script src="lib/all_ajax.js"></script>
-    <script src="js/index_hotSale.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index_goods.css" />
+    <script src="../lib/jquery-3.1.1.js"></script>
+    <script src="../lib/jquery-banner.js"></script>
+    <script src="../js/fruits.js"></script>
+    <script src="../js/index_goods.js"></script>
 </head>
 <body>
     <div id="box">
@@ -462,131 +461,174 @@
                     <li><a href="html/Fruits.html">水果生鲜</a><span></span></li>
                     <li><a href="html/ Furniture.html">家具商城</a></li>
                     <li>订购热线<span>400-630-0077</span>
-                        <ul>
-                            <li><h3><a href="#">正在直播</h3></a><p>[17:00-17:19]<p></li>
-                            <li><img src="img/banner_ad2.jpg" alt="" /></li>
-                            <li><a href="#">FaSoLa软底居家拖鞋换季开仓组</a><p><span>￥</span><span>99</span></p></li>
-                            <li><h4>嘉书</h4></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
-        <div id="banner">
-            <div class="banner"></div>
-        </div>
-        <div id="hotPlay">
-            <div class="container clearfix">
-                <div class="hot clearfix">
-                    <h4 class="h4_top"><a href="#">今日热播<a><a href="#">昨日热播</a></h4>
-                    <p class="p1 img_hot"></p>
-                    <div class="hotlist hotlist1"></div>
+        <div id="main">
+            <div class="container">
+                <div class="top">
+                    <h3>酒水、保健</h3>
+                    <ul>
+                        <li>></li>
+                        <li><a href="#">营养保健</a></li>
+                        <li>></li>
+                        <li><a href="#">辅餐食品</a></li>
+                        <li>></li>
+                        <li>源伦冷榨亚麻籽油家庭组</li>
+                    </ul>
                 </div>
-                <div class="recommend clearfix">
-                    <h4><a href="#">热销推荐<a></h4>
-                    <p class="p2 img_hot"></p>
-                    <div class="hotlist hotlist2"></div>
+                <div class="center clearfix">
+                    <img src="../img/index_details1.jpg"/>
+                    <div class="right">
+                        <ul>
+                            <li class="clearfix"><h4>源伦冷榨亚麻籽油家庭组</h4><span class="num">(供货号:20121240)</span></li>
+                            <li><span>嘉丽价</span><span><i>¥</i>399.00</span></li>
+                            <li><span>积分</span><span>订购此商品可返回<i>251*2</i>积分</span></li>
+                            <li><span>尺寸</span><span>源伦冷榨亚麻籽油家庭组</span></li>
+                            <li><span>数量</span><span>-</span><span><input type="text" value="1"/></span><span>+</span><span>件</span></li>
+                            <li>
+                                <button>立即购买</button>
+                                <button>加入购物车</button>
+                                <button>收藏</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="clothes clearfix">
-                    <h4><i></i><a href="#">服装帽鞋<a></h4>
+                <div class="small">
+                    <div class="img_div">
+                        <a href="#"><img src="../img/index_details1.jpg" alt="" /></a>
+                    </div>
+                    <div class="share">
+                        <p>
+                            <span>分享到：</span>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a class="share_a" href="#"></a>
+                        </p>
+                        <ul class="share_ul">
+                            <li><p>分享到</p></li>
+                            <li><a href="#"><i></i>一键分享</a><a href="#"><i></i>QQ空间</a></li>
+                            <li><a href="#"><i></i>新浪微博</a><a href="#"><i></i>百度云收藏</a></li>
+                            <li><a href="#"><i></i>微信</a><a href="#"><i></i>人人网</a></li>
+                            <li><a href="#"><i></i>腾讯微博</a><a href="#"><i></i>百度相册</a></li>
+                            <li><a href="#"><i></i>开心网</a><a href="#"><i></i>腾讯好友</a></li>
+                            <li><a href="#"><i></i>百度贴吧</a><a href="#"><i></i>豆瓣网</a></li>
+                            <li><a href="#"><i></i>百度新首页</a><a href="#"><i></i>QQ好友</a></li>
+                            <li><a href="#"><i></i>和讯微博</a><a href="#">百度中心<i></i></a></li>
+                            <li><a href="#">更多...</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="match">
+                    <p>最佳搭配</p>
+                    <ul class="match_ul clearfix">
+                        <li>
+                            <img src="../img/index_details1.jpg" alt="" />
+                            <p><a href="#">周家庄五谷蔬果速食营养粥特惠组</a></p>
+                            <span>¥199.00</span>
+                        </li>
+                        <li>
+                            <img src="../img/index_details1.jpg" alt="" />
+                            <p><a href="#">周家庄五谷蔬果速食营养粥特惠组</a></p>
+                            <span>¥199.00</span>
+                        </li>
+                        <li>
+                            <img src="../img/index_details1.jpg" alt="" />
+                            <p><a href="#">周家庄五谷蔬果速食营养粥特惠组</a></p>
+                            <span>¥199.00</span>
+                        </li>
+                        <li>
+                            <img src="../img/index_details1.jpg" alt="" />
+                            <p><a href="#">周家庄五谷蔬果速食营养粥特惠组</a></p>
+                            <span>¥199.00</span>
+                        </li>
+                        <li>
+                            <img src="../img/index_details1.jpg" alt="" />
+                            <p><a href="#">周家庄五谷蔬果速食营养粥特惠组</a></p>
+                            <span>¥199.00</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="history clearfix">
                     <div class="left">
-                        <ul>
-                            <li>
-                                <a href="#">丝袜</a>
-                                <a href="#">内衣</a>
-                                <a href="#">女鞋</a>
-                            </li>
-                            <li>
-                                <a href="#">女裤</a>
-                                <a href="#">男裤</a>
-                                <a href="#">女包</a>
-                            </li>
-                            <li>
-                                <a href="#">男鞋</a>
-                                <a href="#">女T恤</a>
-                                <a href="#">男T恤</a>
-                            </li>
-                        </ul>
-                        <p class="p2 img_hot"></p>
+                        <div class="left_top">
+                            <p class="top_p">微信购买该商品</p>
+                            <img src="../img/index_details_erweima.png" alt="" />
+                            <p class="top_p">最近浏览</p>
+                            <ul>
+                                <li>
+                                    <img src="../img/index_details1.jpg" alt="" />
+                                    <p>
+                                        <a href="#">源伦冷榨亚麻籽油家庭组</a>
+                                    </p>
+                                    <span>¥399.00</span>
+                                </li>
+                                <li>
+                                    <img src="../img/index_details1.jpg" alt="" />
+                                    <p>
+                                        <a href="#">源伦冷榨亚麻籽油家庭组</a>
+                                    </p>
+                                    <span>¥399.00</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="left_bottom">
+                            <p class="top_p hotSale">热销排行</p>
+                            <ul>
+                                <li>
+                                    <img src="../img/index_details4.jpg" alt="" />
+                                    <p>
+                                        <a href="#">源伦冷榨亚麻籽油家庭组</a>
+                                    </p>
+                                    <span>¥399.00</span>
+                                </li>
+                                <li>
+                                    <img src="../img/index_details4.jpg" alt="" />
+                                    <p>
+                                        <a href="#">源伦冷榨亚麻籽油家庭组</a>
+                                    </p>
+                                    <span>¥399.00</span>
+                                </li>
+                                <li>
+                                    <img src="../img/index_details3.jpg" alt="" />
+                                    <p>
+                                        <a href="#">源伦冷榨亚麻籽油家庭组</a>
+                                    </p>
+                                    <span>¥399.00</span>
+                                </li>
+                                <li>
+                                    <img src="../img/index_details3.jpg" alt="" />
+                                    <p>
+                                        <a href="#">源伦冷榨亚麻籽油家庭组</a>
+                                    </p>
+                                    <span>¥399.00</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <p class="p3 img_hot"></p>
-                    <div class="hotlist hotlist3"></div>
-                </div>
-                <div class="clothes clearfix makeUp">
-                    <h4><i></i><a href="#">个护美妆<a></h4>
-                    <div class="left clearfix">
-                        <ul>
-                            <li>
-                                <a href="#">面膜</a>
-                                <a href="#">护肤套组</a>
-                                <a href="#">染发造型</a>
-                            </li>
-                            <li>
-                                <a href="#">洗护套组</a>
-                                <a href="#">BB霜</a>
-                                <a href="#">香水</a>
-                            </li>
-                            <li>
-                                <a href="#">皂</a>
-                                <a href="#">乳液面霜</a>
-                                <a href="#">眼部护理</a>
-                            </li>
-                        </ul>
-                        <p class="p2 img_hot"></p>
+                    <div class="right">
+                        <div class="top">
+                            <ul class="top_ul clearfix">
+                                <li><span>商品介绍</span></li>
+                                <li><span>商品介绍</span></li>
+                                <li><span>商品介绍</span></li>
+                                <li><span>商品介绍</span></li>
+                                <li><span>商品介绍</span></li>
+                            </ul>
+                        </div>
+                        <div class="center">
+                            <ul>
+                                <li><img src="../img/index_details_big1.jpg" alt="" /></li>
+                                <li><img src="../img/index_details_big2.jpg" alt="" /></li>
+                                <li><img src="../img/index_details_big3.jpg" alt="" /></li>
+                                <li><img src="../img/index_details_big4.jpg" alt="" /></li>
+                                <li><img src="../img/index_details_big5.jpg" alt="" /></li>
+                            </ul>
+                        </div>
                     </div>
-                    <p class="p3 img_hot"></p>
-                    <div class="hotlist hotlist3 hotlist4"></div>
-                </div>
-                <div class="ad"></div>
-                <div class="clothes clearfix makeUp F3">
-                    <h4><i></i><a href="#">食品酒水<a><a href="#">运动保健<a></h4>
-                    <div class="left clearfix">
-                        <ul>
-                            <li>
-                                <a href="#">大米</a>
-                                <a href="#">跑步机</a>
-                                <a href="#">按摩器材</a>
-                            </li>
-                            <li>
-                                <a href="#">食用油</a>
-                                <a href="#">保健品</a>
-                                <a href="#">干果/零食</a>
-                            </li>
-                            <li>
-                                <a href="#">酒水</a>
-                                <a href="#">水果</a>
-                                <a href="#">大闸蟹</a>
-                            </li>
-                        </ul>
-                        <p class="p2 img_hot"></p>
-                    </div>
-                    <p class="p3 img_hot"></p>
-                    <div class="hotlist hotlist3 hotlist5"></div>
-                </div>
-                <div class="clothes clearfix makeUp F3 F4">
-                    <h4><i></i><a href="#">家居日用<a><a href="#">家用电器<a></h4>
-                    <div class="left clearfix">
-                        <ul>
-                            <li>
-                                <a href="#">床品件套</a>
-                                <a href="#">被子</a>
-                                <a href="#">清洁用品</a>
-                            </li>
-                            <li>
-                                <a href="#">凉席</a>
-                                <a href="#">刀具</a>
-                                <a href="#">电动工具</a>
-                            </li>
-                            <li>
-                                <a href="#">料理/榨汁</a>
-                                <a href="#">电饭煲</a>
-                                <a href="#">锅具</a>
-                            </li>
-                        </ul>
-                        <p class="p2 img_hot"></p>
-                    </div>
-                    <p class="p3 img_hot"></p>
-                    <div class="hotlist hotlist3 hotlist6"></div>
                 </div>
             </div>
         </div>
@@ -648,10 +690,6 @@
                     </div>
                 </div>
             </div>  
-        </div>
-        <div id="ad">
-            <span>x</span>
-            <img src="img/ad.png" alt="" />
         </div>
         <div id="footer">
             <div class="container">

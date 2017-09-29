@@ -14,5 +14,9 @@ jQuery(function($){
            $(this).children('ul').css('display','none');
         });
     }
+    //吸底菜单删除
+    $('#ad span').click(function(){
+        $('#ad').css('display','none');
+    });
   
 });

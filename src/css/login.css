@@ -1,0 +1,142 @@
+@charset "UTF-8";
+#box #main {
+  background: #F7F7F7; }
+  #box #main .container {
+    padding-bottom: 24px; }
+    #box #main .container .top {
+      padding: 46px 0 20px; }
+      #box #main .container .top h1 {
+        position: relative;
+        width: 196px;
+        height: 74px;
+        float: left; }
+        #box #main .container .top h1 i {
+          display: block;
+          height: 74px;
+          width: 196px;
+          background: url("../img/img.fw.png") 0 -320px;
+          position: absolute; }
+      #box #main .container .top i {
+        font-style: normal;
+        color: #c9c9c9;
+        padding-right: 15px; }
+      #box #main .container .top p {
+        float: left;
+        font-family: "Microsoft Yahei";
+        font-size: 17px;
+        line-height: 74px;
+        color: #444444; }
+      #box #main .container .top .entrance {
+        float: right;
+        line-height: 74px; }
+        #box #main .container .top .entrance a {
+          display: inline-block;
+          font-size: 12px;
+          color: #E91456; }
+        #box #main .container .top .entrance i.aside {
+          padding: 0px; }
+        #box #main .container .top .entrance a:hover {
+          text-decoration: underline; }
+    #box #main .container .center {
+      padding-top: 30px; }
+      #box #main .container .center img {
+        float: left;
+        width: 852px;
+        height: 377px; }
+      #box #main .container .center .right {
+        float: left;
+        width: 338px;
+        height: 377px;
+        background: #fff; }
+        #box #main .container .center .right ul li {
+          padding-left: 30px;
+          width: 310px; }
+          #box #main .container .center .right ul li:first-child {
+            line-height: 36px; }
+            #box #main .container .center .right ul li:first-child span {
+              color: #444;
+              float: left; }
+            #box #main .container .center .right ul li:first-child a {
+              color: #E91456;
+              font-size: 12px;
+              float: right; }
+          #box #main .container .center .right ul li input {
+            width: 280px;
+            height: 34px;
+            font-size: 12px;
+            padding-left: 5px;
+            outline: none;
+            display: block;
+            margin-bottom: 16px; }
+          #box #main .container .center .right ul li.code input {
+            width: 135px;
+            float: left; }
+            #box #main .container .center .right ul li.code input:nth-child(2) {
+              width: 95px;
+              height: 32px;
+              background: url("../img/img.fw.png") 0 -411px;
+              border: 0 none; }
+          #box #main .container .center .right ul li:nth-child(4) {
+            margin-bottom: 16px; }
+          #box #main .container .center .right ul li:nth-child(5) {
+            height: 26px; }
+            #box #main .container .center .right ul li:nth-child(5) span {
+              font-size: 12px;
+              float: left; }
+            #box #main .container .center .right ul li:nth-child(5) a {
+              font-size: 12px;
+              float: left;
+              color: #444;
+              padding-left: 6px; }
+            #box #main .container .center .right ul li:nth-child(5) input:first-child {
+              width: 14px;
+              height: 20px;
+              float: left; }
+          #box #main .container .center .right ul li:nth-child(6) button {
+            width: 280px;
+            height: 32px;
+            display: block;
+            border: 0 none;
+            border-color: #e21357;
+            background: #e21357;
+            font-family: "微软雅黑";
+            color: #fff; }
+          #box #main .container .center .right ul li:nth-child(6) button:hover {
+            background: #CC1C23;
+            cursor: pointer; }
+          #box #main .container .center .right ul li:nth-child(7) {
+            margin-top: 30px; }
+            #box #main .container .center .right ul li:nth-child(7) span {
+              font-size: 12px;
+              padding-left: 10px; }
+          #box #main .container .center .right ul li:nth-child(8) {
+            margin-top: 10px;
+            width: 100%;
+            padding: 0;
+            border-top: 1px solid #E8E8E7;
+            text-align: center; }
+            #box #main .container .center .right ul li:nth-child(8) a {
+              padding-top: 10px;
+              display: inline-block;
+              font-size: 12px;
+              color: #444; }
+              #box #main .container .center .right ul li:nth-child(8) a:first-child {
+                position: relative; }
+                #box #main .container .center .right ul li:nth-child(8) a:first-child i {
+                  display: block;
+                  height: 16px;
+                  width: 16px;
+                  background: url("../img/img.fw.png") -119px -413px;
+                  position: absolute;
+                  top: 11px;
+                  left: -19px; }
+              #box #main .container .center .right ul li:nth-child(8) a:nth-child(2) {
+                position: relative; }
+                #box #main .container .center .right ul li:nth-child(8) a:nth-child(2) i {
+                  display: block;
+                  width: 57px;
+                  height: 21px;
+                  background: url("../img/img.fw.png") -151px -417px;
+                  position: absolute;
+                  top: -5px;
+                  left: 6px; }

@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded',function(){
         var goodsList = document.querySelector('.goodsList');
         var playList = document.querySelector('.playList');
         var right = document.querySelector('.right');
-        var txt_input= document.querySelector('.txt_input');
-        var txt_input2= document.querySelector('.txt_input2');
+        var txt_input= document.querySelectorAll('.txt_input');
         var date_start= document.querySelector('.date_start');
         // 当前ul
         var pageNo = 1;
@@ -70,46 +69,49 @@ document.addEventListener('DOMContentLoaded',function(){
             <p><a href="#">茅台集团庆典贵宾用酒V20</a></p>
             <span>￥398.00</span>
         `;  
-        txt_input.onfocus= function(){
-           date_start.style.display = 'block';
+        txt_input[0].onfocus= function(){
+            date_start.style.display = 'block';
+            click(document.querySelectorAll('.txt_input')[0]);
+            console.log(document.querySelectorAll('.txt_input')[0])
+        } 
+        txt_input[1].onfocus= function(){
+            date_start.style.display = 'block';
+            click(document.querySelectorAll('.txt_input')[1]);
+            console.log(document.querySelectorAll('.txt_input')[1])
+
         } 
         document.onclick = function(e){
             var target = e.target;
-            if(target.className.toLowerCase()!== 'txt_input'){
+            if(target.className !== 'txt_input'){
                 date_start.style.display = 'none';
             }
         }
-        var mySchedule = new Schedule({
-            el:'#schedule-box',
-            clickCb: function (y,m,d) {
-                document.querySelector('.txt_input').innerHTML = y+'-'+m+'-'+d;
-                document.querySelector('.txt_input').value = y+'-'+m+'-'+d,
-                date_start.style.display = 'none'
+        function click(ele){
+            var mySchedule = new Schedule({
+                el:'#schedule-box',
+                clickCb: function (y,m,d) {
+                    ele.innerHTML = y+'-'+m+'-'+d;
+                    ele.value = y+'-'+m+'-'+d
+                },
+                nextMonthCb: function (y,m,d) {
+                    ele.innerHTML = y+'-'+m+'-'+d,
+                    ele.value = y+'-'+m+'-'+d
+                },
+                nextYeayCb: function (y,m,d) {
+                    ele.innerHTML = y+'-'+m+'-'+d,
+                    ele.value = y+'-'+m+'-'+d
 
-            },
-            nextMonthCb: function (y,m,d) {
-                document.querySelector('.txt_input').innerHTML = y+'-'+m+'-'+d,
-                document.querySelector('.txt_input').value = y+'-'+m+'-'+d,
-                date_start.style.display = 'none'
+                },
+                prevMonthCb: function (y,m,d) {
+                    ele.innerHTML = y+'-'+m+'-'+d,
+                    ele = y+'-'+m+'-'+d
 
-            },
-            nextYeayCb: function (y,m,d) {
-                document.querySelector('.txt_input').innerHTML = y+'-'+m+'-'+d,
-                document.querySelector('.txt_input').value = y+'-'+m+'-'+d,
-                date_start.style.display = 'none'
+                },
+                prevYearCb: function (y,m,d) {
+                    ele.innerHTML = y+'-'+m+'-'+d,
+                    ele.value = y+'-'+m+'-'+d
 
-            },
-            prevMonthCb: function (y,m,d) {
-                document.querySelector('.txt_input').innerHTML = y+'-'+m+'-'+d,
-                document.querySelector('.txt_input').value = y+'-'+m+'-'+d,
-                date_start.style.display = 'none'
-
-            },
-            prevYearCb: function (y,m,d) {
-                document.querySelector('.txt_input').innerHTML = y+'-'+m+'-'+d,
-                document.querySelector('.txt_input').value = y+'-'+m+'-'+d,
-                date_start.style.display = 'none'
-
-            }
-        });
+                }
+            });
+        }
 });
