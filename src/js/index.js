@@ -18,5 +18,7 @@ jQuery(function($){
     $('#ad span').click(function(){
         $('#ad').css('display','none');
     });
+
+
   
 });

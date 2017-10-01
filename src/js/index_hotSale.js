@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded',function(){
         xajax.post('api/index_hotSale.php?pageNo='+pageNo).then(function(res){
             var ul = document.createElement('ul');
             ul.innerHTML = res.data.map(item=>{
-                return `<li>
+                return `<li class="index_hot">
                         <p>${item.left_time}</p>
                         <img src="${item.imgurl}">
                         <p class="title"><a href="#">${item.title}</a></p>
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded',function(){
         xajax.post('api/index_hotSale.php?pageNo='+pageNo).then(function(res){
             var ul = document.createElement('ul');
             ul.innerHTML = res.data.map(item=>{
-                return `<li>
+                return `<li class="index_hot">
                         <img src="${item.imgurl}">
                         <p class="title"><a href="#">${item.title}</a></p>
                         <p class="price">￥${item.price}</p>
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded',function(){
             xajax.post('api/index_hotSale.php?qty=6&pageNo='+pageNo).then(function(res){
                     var ul = document.createElement('ul');
                     ul.innerHTML = res.data.map(item=>{
-                        return `<li>
+                        return `<li class="index_hot">
                                     <img src="${item.imgurl}">
                                     <p class="title"><a href="#">${item.title}</a></p>
                                     <p class="price">￥${item.price}</p>
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 var a = document.createElement('a');
                 a.innerHTML = res.data.map(item=>{
                     return `
-                        <img src="${item.imgurl}">
+                        <img class="index_hot" src="${item.imgurl}">
                         `;
                 }).join('');
                 img_hot[i].appendChild(a);
@@ -107,4 +107,35 @@ document.addEventListener('DOMContentLoaded',function(){
                         `;
                 }).join(''); 
         });
+        setTimeout(function(){
+            var index_hot = document.querySelectorAll('.index_hot');
+            // var top = document.querySelector('.top');
+            // console.log(top)
+            //获取商品信息
+            var xhr_wly = new XMLHttpRequest();
+            xhr_wly.onreadystatechange = function(){
+                if(xhr_wly.readyState == 4){
+                    var goodslist = JSON.parse(xhr_wly.responseText);
+                    for(let i=0;i<index_hot.length;i++){
+                        index_hot[i].onclick = function(){
+                            data = goodslist[i];
+                            xiangqingye();
+                        }
+                    }
+                    function xiangqingye(){
+                      var params='';
+                      // 对象遍历
+                      for(var attr in data){
+                         params +=attr+'='+data[attr]+'&';
+                      }
+                      // 删除多余的&
+                      params=params.slice(0,-1);
+                      location.href="html/index_goods.html?"+params;
+                   }
+                }
+            }
+            xhr_wly.open('get','api/index_goods.json',true);
+            xhr_wly.send();
+                    
+        },500);
     });
