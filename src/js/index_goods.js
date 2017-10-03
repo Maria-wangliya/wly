@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded',function(){
         `;
     }
     //有三张小图
-    if(attr == '../img/01_small1.png' || attr == '../img/03_small1.jpg' || attr== '../img/11_big_details.png' || attr == '../img/hot11.jpg' || attr == '../img/hot14.jpg' || attr== '../img/hot17.jpg' || attr == '../img/36_big_details.png'){
+    if(attr == '../img/01_small1.png' || attr == '../img/03_small1.jpg' || attr== '../img/11_big_details.png' || attr == '../img/hot11.jpg' || attr == '../img/hot14.jpg' || attr== '../img/hot17.jpg' || attr == '../img/36_big_details.png' || attr == '../img/hot2.jpg'){
         small.innerHTML +=  `
             <div class="img_div">
             <a href="#"><img class="special" src="${res.small2}"></a>
@@ -197,19 +197,83 @@ document.addEventListener('DOMContentLoaded',function(){
     }
 
     //大图详情部分
-    center2.innerHTML = `
-        <ul>
-            <li><img src="${res.bigImg1}"</li>
-            <li><img src="${res.bigImg2}"</li>
-            <li><img src="${res.bigImg3}"</li>
-            <li><img src="${res.bigImg4}"</li>
-            <li><img src="${res.bigImg5}"</li>
-            <li><img src="${res.bigImg6}"</li>
-            <li><img src="${res.bigImg7}"</li>
-            <li><img src="${res.bigImg8}"</li>
-            <li><img src="${res.bigImg9}"</li>
-            <li><img src="${res.bigImg10}"</li>
-            <li><img src="${res.bigImg11}"</li>
-        </ul>   
-    `;
-})
+    //详情为大图的有：01_small1.png / 03_small1.jpg
+    if(attr == '../img/hot3.jpg' || attr == '../img/hot35.jpg' || attr == '../img/06_big_details.jpg' || attr == '../img/hot9.jpg' || attr == '../img/hot13.jpg' || attr == '../img/hot15.jpg' || attr == '../img/hot_left24.jpg'){
+        center2.innerHTML = `
+            <div class="right_ul">
+            <ul>
+            <li>
+                <p class="p_top">商品规格</p>
+                <p>
+                    ${res.spec1}<br/>
+                    ${res.spec2}<br/>
+                    ${res.spec3}<br/>
+                    ${res.spec4}<br/>
+                    ${res.spec5}<br/>
+                    ${res.spec6}<br/>
+                    ${res.spec7}
+                </p>
+            </li>
+            <li>
+                <p class="p_top">商品特色</p>
+                <p>
+                    ${res.special1}<br/>
+                    ${res.special2}<br/>
+                    ${res.special3}<br/>
+                    ${res.special4}<br/>
+                    ${res.special5}<br/>
+                    ${res.special6}<br/>
+                </p>
+            </li>
+            <li>
+                <p class="p_top">使用方法</p>
+                <p>${res.method}</p>
+            </li>
+             <li>
+                <p class="p_top">注意事项</p>
+                <p>
+                    ${res.care1}<br/>
+                    ${res.care2}<br/>
+                    ${res.care3}
+                </p>
+            </li>
+            </ul></div>
+        `;
+    }else if(attr == '../img/11_big_details.png' || attr == '../img/hot18.jpg' || attr == '../img/hot21.jpg' || attr == '../img/hot25.jpg' || attr == '../img/hot27.jpg'){
+        center2.innerHTML = `
+            <ul>
+                <li><img src="${res.bigImg1}"</li>
+                <li><img src="${res.bigImg2}"</li>
+                <li><img src="${res.bigImg3}"</li>
+                <li><img src="${res.bigImg4}"</li>
+                <li><img src="${res.bigImg5}"</li>
+                <li><img src="${res.bigImg11}"</li>
+            </ul>   
+        `;
+    }else if(attr == '../img/27_big_details.jpg' || attr == '../img/hot22.jpg' || attr == '../img/hot26.jpg'){
+        center2.innerHTML = `
+            <ul>
+                <li><img src="${res.bigImg1}"</li>
+                <li><img src="${res.bigImg2}"</li>
+                <li><img src="${res.bigImg3}"</li>
+                <li><img src="${res.bigImg11}"</li>
+            </ul>   
+        `;
+    }else{
+        center2.innerHTML = `
+            <ul>
+                <li><img src="${res.bigImg1}"</li>
+                <li><img src="${res.bigImg2}"</li>
+                <li><img src="${res.bigImg3}"</li>
+                <li><img src="${res.bigImg4}"</li>
+                <li><img src="${res.bigImg5}"</li>
+                <li><img src="${res.bigImg6}"</li>
+                <li><img src="${res.bigImg7}"</li>
+                <li><img src="${res.bigImg8}"</li>
+                <li><img src="${res.bigImg9}"</li>
+                <li><img src="${res.bigImg10}"</li>
+                <li><img src="${res.bigImg11}"</li>
+            </ul>   
+        `;
+    }
+})  

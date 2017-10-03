@@ -352,3 +352,18 @@
       #box #main .container .history .center ul li img {
         width: 750px;
         height: auto; }
+    #box #main .container .history .center .right_ul {
+      margin: 15px 0 0 15px; }
+      #box #main .container .history .center .right_ul ul li {
+        padding: 0; }
+        #box #main .container .history .center .right_ul ul li p {
+          font-size: 12px;
+          color: #444;
+          line-height: 26px;
+          text-indent: 15px; }
+          #box #main .container .history .center .right_ul ul li p.p_top {
+            height: 40px;
+            line-height: 40px;
+            background: #eee;
+            padding-left: 10px;
+            text-indent: 0px; }

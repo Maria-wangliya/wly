@@ -508,7 +508,29 @@
                             }
                         }
                     }
+                    .right_ul{
+                        margin:15px 0 0 15px;
+                        ul{
+                            li{
+                                padding:0;
+                                p{
+                                    font-size:12px;
+                                    color:#444;
+                                    line-height:26px;
+                                    text-indent:15px;
+                                    &.p_top{
+                                        height:40px;
+                                        line-height:40px;
+                                        background:#eee;
+                                        padding-left:10px;
+                                        text-indent:0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
+
             }
         }
     }
