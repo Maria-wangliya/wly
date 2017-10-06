@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',function(){
         xajax.post('../api/TV_Show.php?qty=29&pageNo='+pageNo).then(function(res){
             var ul = document.createElement('ul');
             ul.innerHTML = res.data.map(item=>{
-                return `<li>
+                return `<li class="index_hot">
                         <img src="${item.imgurl}">
                         <a href="#">${item.title}</a>
                         <span class="price">￥${item.price}</span>
@@ -72,13 +72,10 @@ document.addEventListener('DOMContentLoaded',function(){
         txt_input[0].onfocus= function(){
             date_start.style.display = 'block';
             click(document.querySelectorAll('.txt_input')[0]);
-            console.log(document.querySelectorAll('.txt_input')[0])
         } 
         txt_input[1].onfocus= function(){
             date_start.style.display = 'block';
             click(document.querySelectorAll('.txt_input')[1]);
-            console.log(document.querySelectorAll('.txt_input')[1])
-
         } 
         document.onclick = function(e){
             var target = e.target;
@@ -114,4 +111,44 @@ document.addEventListener('DOMContentLoaded',function(){
                 }
             });
         }
+        setTimeout(function(){
+            var index_hot = document.querySelectorAll('.index_hot');
+            var xhr_wly = new XMLHttpRequest();
+            xhr_wly.onreadystatechange = function(){
+                if(xhr_wly.readyState == 4){
+                    var goodslist = JSON.parse(xhr_wly.responseText);
+                    for(let i=0;i<index_hot.length;i++){
+                        index_hot[i].setAttribute('data-guid',i+1);
+                        index_hot[i].onclick = function(){
+                            data = goodslist[i];
+                            xiangqingye();
+                            var currentGUID = this.getAttribute('data-guid');
+
+                            // 根据id获取整个商品的信息
+                            var currentGoods = goodslist.filter(function(item){
+                                return item.id === currentGUID;
+                            })[0];
+
+                            // 把当前商品写入cookie
+                            var now = new Date();
+                            now.setDate(now.getDate()+7);
+                            document.cookie = 'currentGoods=' + JSON.stringify(currentGoods) + ';expires=' + now;
+                        }
+                    }
+                    function xiangqingye(){
+                      var params='';
+                      // 对象遍历
+                      for(var attr in data){
+                         params +=attr+'='+data[attr]+'&';
+                      }
+                      // 删除多余的&
+                      params=params.slice(0,-1);
+                      location.href="../html/index_goods.html?"+params;
+                   }
+                }
+            }
+            xhr_wly.open('get','../api/TVShow_goods.json',true);
+            xhr_wly.send();
+                    
+        },500);
 });

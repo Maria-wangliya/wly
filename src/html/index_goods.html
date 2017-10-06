@@ -10,6 +10,8 @@
     <script src="../lib/jquery-banner.js"></script>
     <script src="../js/fruits.js"></script>
     <script src="../js/index_goods.js"></script>
+    <script src="../js/get_history_cookie.js"></script>
+    <script src="../js/animate.js"></script>
 </head>
 <body>
     <div id="box">
@@ -35,8 +37,9 @@
                 <div class="search">
                     <input type="text" placeholder="输入商品名称或电视商品编号"/>
                     <button><i class="iconfont icon-sousuo"></i><a href ="#">搜索</a></button>
-                    <a class="buycar">
+                    <a href="buyCar.html" class="buycar">
                         <i></i>
+                        <span class="qty">0</span>
                         <p>我的购物车</p>
                     </a>
                 </div>
@@ -504,62 +507,32 @@
                             <p class="top_p">微信购买该商品</p>
                             <img src="../img/index_details_erweima.png" alt="" />
                             <p class="top_p">最近浏览</p>
-                            <ul>
-                                <li>
-                                    <img src="../img/index_details1.jpg" alt="" />
-                                    <p>
-                                        <a href="#">源伦冷榨亚麻籽油家庭组</a>
-                                    </p>
-                                    <span>¥399.00</span>
-                                </li>
-                                <li>
-                                    <img src="../img/index_details1.jpg" alt="" />
-                                    <p>
-                                        <a href="#">源伦冷榨亚麻籽油家庭组</a>
-                                    </p>
-                                    <span>¥399.00</span>
-                                </li>
-                                <li>
-                                    <img src="../img/index_details1.jpg" alt="" />
-                                    <p>
-                                        <a href="#">源伦冷榨亚麻籽油家庭组</a>
-                                    </p>
-                                    <span>¥399.00</span>
-                                </li>
-                                <li>
-                                    <img src="../img/index_details1.jpg" alt="" />
-                                    <p>
-                                        <a href="#">源伦冷榨亚麻籽油家庭组</a>
-                                    </p>
-                                    <span>¥399.00</span>
-                                </li>
-                            </ul>
                         </div>
                         <div class="left_bottom">
                             <p class="top_p hotSale">热销排行</p>
                             <ul>
-                                <li>
+                                <li class="history_li2">
                                     <img src="../img/hot8.jpg" alt="" />
                                     <p>
                                         <a href="#">20L禧又多土榨纯香菜籽油超值组</a>
                                     </p>
                                     <span>¥199.00</span>
                                 </li>
-                                <li>
+                                <li class="history_li2">
                                     <img src="../img/hot9.jpg" alt="" />
                                     <p>
                                         <a href="#">五粮液股份纳福迎祥年末回馈组</a>
                                     </p>
                                     <span>¥399.00</span>
                                 </li>
-                                <li>
+                                <li class="history_li2">
                                     <img src="../img/hot34.jpg" alt="" />
                                     <p>
                                         <a href="#">馨屋防水去污手套10+10+1超值组</a>
                                     </p>
                                     <span>¥199.00</span>
                                 </li>
-                                <li>
+                                <li class="history_li2">
                                     <img src="../img/play22.jpg" alt="" />
                                     <p>
                                         <a href="#">20L禧又多茶籽橄榄调和油加赠组</a>

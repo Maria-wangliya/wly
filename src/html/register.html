@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/common.css" />
     <link rel="stylesheet" type="text/css" href="../css/register.css" />
+    <script type="text/javascript" src="../js/reg.js"></script>
 </head>
 <body>
     <div id="box">
@@ -22,15 +23,16 @@
                             <ul>
                                 <li>
                                     <span>*用户名：</span>
-                                    <input type="text" placeholder="输入手机号"/>
+                                    <input id="username" type="text" placeholder="输入名字"/>
+                                    <span class="hint"></span>
                                 </li>
                                 <li>
                                     <span>*设置密码：</span>
-                                    <input type="password" placeholder="创建密码"/>
+                                    <input id="password" type="password" placeholder="创建密码"/>
                                 </li>
                                 <li>
                                     <span>*确认密码：</span>
-                                    <input type="password" placeholder="确认密码"/>
+                                    <input id="certain_password" type="password" placeholder="确认密码"/>
                                 </li>
                                 <li class="check clearfix"><input type="checkbox" /><a>我已阅读并同意《嘉丽购物网服务条款》</a></li>
                                 <li><button>登录</button></li>

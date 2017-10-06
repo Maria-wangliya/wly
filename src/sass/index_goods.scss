@@ -1,4 +1,25 @@
 #box{
+    #search{
+        .container{
+            a{
+               .qty{
+                    position:absolute;
+                    height:15px;
+                    display:block;
+                    width: 15px;
+                    border-radius:50%;
+                    background:#EA1454;
+                    top:5px;
+                    left:24px;
+                    color:#fff;
+                    font-size:12px;
+                    text-align:center;
+                    line-height:15px;
+                    font-weight:bold;
+                } 
+            }
+        }
+    }
     a:hover{cursor:pointer;}
     #nav{
         .container{
@@ -130,6 +151,7 @@
                                     height:24px;
                                     width: 24px;
                                 }
+                                &:nth-child(2),&:nth-child(4):hover{cursor:pointer;}
                                 &:nth-child(3){
                                     input{
                                         width: 48px;
@@ -155,10 +177,13 @@
                                 background:#f3f3f3;
                                 margin-right:8px;
                                 color:#444;
+                                outline:0 none;
                                 &:nth-child(2){
                                     background:#E21357;
                                     color:#fff;
                                     border: 0 none;
+                                    outline:0 none;
+
                                 }
                                 &:nth-child(2):hover{
                                     background:#C90F4D;
@@ -433,6 +458,10 @@
                     float:left;
                     .left_top{
                         border:1px solid #E8E8E7;
+                    }
+                    li{
+                        border-top:1px solid #eee;
+                        img:hover{cursor:pointer;}
                     }
                     .top_p{
                         height:40px;

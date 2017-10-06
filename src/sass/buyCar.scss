@@ -1,0 +1,300 @@
+#box{
+    #search{
+        .container{
+            h1{
+                width: 196px;
+                height: 74px;
+                float:left;
+            }
+            .car{
+                float:left;
+                padding-left:20px;
+                span{
+                    display:inline-block;
+                    font-size:17px;
+                    color:#666;
+                    line-height:74px;
+                    &:first-child{
+                        color:#ddd;
+                        padding-right:16px;
+                    }
+                }
+            }
+            .right{
+                float:right;
+                height:74px;
+                padding-top:36px;
+                li{
+                    float:left;
+                    span{
+                        float:left;
+                        height: 4px;
+                        width: 130px;
+                        border-top:4px solid #d2d2d2;
+                        position:relative;
+                        &.active{
+                            border-top: 4px solid rgb(232, 19, 85);
+                        }
+                        i{
+                            display:block;
+                            height: 10px;
+                            width: 10px;
+                            background:url('../img/img.fw.png') 0 -45px;     
+                            position:absolute;  
+                            top:-7px;
+                            left:64px;    
+                        }
+                    }
+                    p{
+                        text-align:center;
+                        font-size:12px;
+                        padding-top:10px;
+                    }
+                }
+            }
+        }
+    }
+    #main{
+        .container{
+            padding:10px 0 24px 0;
+            .top{
+                height:24px;
+                span{
+                    display:block;
+                    float:left;
+                    line-height:24px;
+                }
+                a{
+                    display:block;
+                    float:right;
+                    color:#FF0000;
+                }
+            }
+            ul.buyList{
+                border:1px solid #eee;
+                i{font-style:normal;}
+                li{
+                    &.li_1{
+                        background:#eee;
+                        line-height:40px;
+                        padding-left:10px;
+                        span{
+                            display:inline-block;
+                            color:#444;
+                            &:first-child{
+                                width: 240px;
+                            }
+                            &:nth-child(2){
+                                width: 260px;
+                            }
+                            &:nth-child(3),&:nth-child(5){
+                                width: 150px;
+                            }
+                            &:nth-child(4){
+                                width: 150px;
+                            }
+                            &:nth-child(6){
+                                width: 120px;
+                            }
+                        }
+                    }
+                    &.li_3{
+                        background:#eee;
+                        padding-left:20px;
+                        p{
+                            float:left;
+                            padding-top:10px;
+                            &:first-child{
+                                width: 580px;
+                                height: 130px;
+                                span{
+                                    color:#444;
+                                    padding-left:6px;
+                                }
+                            }
+                            &:nth-child(2){
+                                width: 260px;
+                                height: 150px;
+                                border-right:1px solid #C9C9C9;
+                                span{
+                                    display:block;
+                                    line-height:30px;
+                                    color:#444;
+                                    font-size:13px;
+                                    &:last-child{
+                                        color:#e91456;
+                                        font-weight:bold;
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                padding:100px 0 0 60px;
+                                button{
+                                    height:32px;
+                                    width: 176px;
+                                    text-align:center;
+                                    line-height:32px;
+                                    font-size:16px;
+                                    color:#fff;
+                                    font-weight:bold;
+                                    border:0 none;
+                                    border:1px solid #e21357;
+                                    background:#e21357;
+                                }
+                                button:hover{
+                                    background:#B90540;
+                                    cursor:pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                div:nth-child(2){
+                    ul{
+                        i{font-style:normal;}
+                        li{
+                            background:#fff;
+                            height: 190px;
+                            padding-left:40px;
+                            border-bottom:1px solid #eee;
+                            p{
+                                float:left;
+                                &:first-child{
+                                    width: 210px;
+                                    position:relative;
+                                    img{
+                                        height: 150px;
+                                        width: 150px;
+                                    }
+                                    i{
+                                        display:block;
+                                        height: 23px;
+                                        width: 23px;
+                                        background:url('../img/img.fw.png') -21px -45px;
+                                        position:absolute;
+                                        top:68px;
+                                        left:-32px;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    width: 268px;
+                                    padding-top:10px;
+                                    span{
+                                        display:block;
+                                        line-height:24px;
+                                        color:#444;
+                                        &:first-child{
+                                            font-weight:bold;
+                                            font-size:14px;
+                                        }
+                                        &:last-child{
+                                            color:#f00;
+                                        }
+                                    }
+                                }
+                                &:nth-child(3){
+                                    width: 158px;
+                                    line-height:150px;
+                                }
+                                &:nth-child(3){
+                                    width: 150px;
+                                    line-height:150px;
+                                }
+                                &:nth-child(4){
+                                    width: 164px;
+                                    line-height:158px;
+                                    span{
+                                        display:inline-block;
+                                        font-weight:bold;
+                                        height:20px;
+                                        width:20px;
+                                        line-height:20px;
+                                        font-size:16px;
+                                        input{
+                                            border:0 none;
+                                            width: 20px;
+                                        }
+                                    }
+                                    span.less,span.more:hover{
+                                        cursor:pointer;
+                                    }
+                                }
+                                &:nth-child(5){
+                                    width: 150px;
+                                    line-height:150px;
+                                    font-weight:bold;
+                                }
+                                &:nth-child(6){
+                                    width:110px;
+                                    line-height:150px;
+                                }
+                                &:nth-child(7){
+                                    text-align:center;
+                                    padding-top:60px;
+                                    a{
+                                        display:block;
+                                        color:#444;
+                                        line-height:20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .clearBtn,.del_goods:hover{
+                    cursor:pointer;
+                }
+            }
+            .like{
+                padding-top:10px;
+                p{
+                    line-height:40px;
+                }
+                ul.love{
+                    height: 368px;
+                    border:1px solid #eee;
+                    padding:10px 0 0 10px;
+                    li{
+                        height: 350px;
+                        border:1px solid #fff;
+                        float:left;
+                        padding:10px 0 0 16px;
+                        margin-right:10px;
+                        img{
+                            width: 230px;
+                            height: 230px;
+                            padding-right:10px;
+                        }
+                        span{
+                            display:block;
+                            color:#444;
+                            font-size:12px;
+                            &:nth-child(3){
+                                font-size:14px;
+                                padding-top:20px;
+                                color:#f00;
+                            }
+                        }
+                        button{
+                            height:32px;
+                            width: 100px;
+                            border:0 none;
+                            border:1px solid #d0d0d0;
+                            background:#f3f3f3;
+                            color:#444;
+                            margin:10px 0 0 60px;
+                        }
+                        button:hover{
+                            background:#eee;
+                            border:1px solid #d0d0d0;
+                            cursor:pointer;
+                        }
+                    }
+                    li:hover{
+                        border:1px solid #ddd;
+                    }
+                }
+            }
+        }
+    }
+}

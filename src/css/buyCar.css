@@ -1,0 +1,229 @@
+#box #search .container h1 {
+  width: 196px;
+  height: 74px;
+  float: left; }
+
+#box #search .container .car {
+  float: left;
+  padding-left: 20px; }
+  #box #search .container .car span {
+    display: inline-block;
+    font-size: 17px;
+    color: #666;
+    line-height: 74px; }
+    #box #search .container .car span:first-child {
+      color: #ddd;
+      padding-right: 16px; }
+
+#box #search .container .right {
+  float: right;
+  height: 74px;
+  padding-top: 36px; }
+  #box #search .container .right li {
+    float: left; }
+    #box #search .container .right li span {
+      float: left;
+      height: 4px;
+      width: 130px;
+      border-top: 4px solid #d2d2d2;
+      position: relative; }
+      #box #search .container .right li span.active {
+        border-top: 4px solid #e81355; }
+      #box #search .container .right li span i {
+        display: block;
+        height: 10px;
+        width: 10px;
+        background: url("../img/img.fw.png") 0 -45px;
+        position: absolute;
+        top: -7px;
+        left: 64px; }
+    #box #search .container .right li p {
+      text-align: center;
+      font-size: 12px;
+      padding-top: 10px; }
+
+#box #main .container {
+  padding: 10px 0 24px 0; }
+  #box #main .container .top {
+    height: 24px; }
+    #box #main .container .top span {
+      display: block;
+      float: left;
+      line-height: 24px; }
+    #box #main .container .top a {
+      display: block;
+      float: right;
+      color: #FF0000; }
+  #box #main .container ul.buyList {
+    border: 1px solid #eee; }
+    #box #main .container ul.buyList i {
+      font-style: normal; }
+    #box #main .container ul.buyList li.li_1 {
+      background: #eee;
+      line-height: 40px;
+      padding-left: 10px; }
+      #box #main .container ul.buyList li.li_1 span {
+        display: inline-block;
+        color: #444; }
+        #box #main .container ul.buyList li.li_1 span:first-child {
+          width: 240px; }
+        #box #main .container ul.buyList li.li_1 span:nth-child(2) {
+          width: 260px; }
+        #box #main .container ul.buyList li.li_1 span:nth-child(3), #box #main .container ul.buyList li.li_1 span:nth-child(5) {
+          width: 150px; }
+        #box #main .container ul.buyList li.li_1 span:nth-child(4) {
+          width: 150px; }
+        #box #main .container ul.buyList li.li_1 span:nth-child(6) {
+          width: 120px; }
+    #box #main .container ul.buyList li.li_3 {
+      background: #eee;
+      padding-left: 20px; }
+      #box #main .container ul.buyList li.li_3 p {
+        float: left;
+        padding-top: 10px; }
+        #box #main .container ul.buyList li.li_3 p:first-child {
+          width: 580px;
+          height: 130px; }
+          #box #main .container ul.buyList li.li_3 p:first-child span {
+            color: #444;
+            padding-left: 6px; }
+        #box #main .container ul.buyList li.li_3 p:nth-child(2) {
+          width: 260px;
+          height: 150px;
+          border-right: 1px solid #C9C9C9; }
+          #box #main .container ul.buyList li.li_3 p:nth-child(2) span {
+            display: block;
+            line-height: 30px;
+            color: #444;
+            font-size: 13px; }
+            #box #main .container ul.buyList li.li_3 p:nth-child(2) span:last-child {
+              color: #e91456;
+              font-weight: bold; }
+        #box #main .container ul.buyList li.li_3 p:nth-child(3) {
+          padding: 100px 0 0 60px; }
+          #box #main .container ul.buyList li.li_3 p:nth-child(3) button {
+            height: 32px;
+            width: 176px;
+            text-align: center;
+            line-height: 32px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: bold;
+            border: 0 none;
+            border: 1px solid #e21357;
+            background: #e21357; }
+          #box #main .container ul.buyList li.li_3 p:nth-child(3) button:hover {
+            background: #B90540;
+            cursor: pointer; }
+    #box #main .container ul.buyList div:nth-child(2) ul i {
+      font-style: normal; }
+    #box #main .container ul.buyList div:nth-child(2) ul li {
+      background: #fff;
+      height: 190px;
+      padding-left: 40px;
+      border-bottom: 1px solid #eee; }
+      #box #main .container ul.buyList div:nth-child(2) ul li p {
+        float: left; }
+        #box #main .container ul.buyList div:nth-child(2) ul li p:first-child {
+          width: 210px;
+          position: relative; }
+          #box #main .container ul.buyList div:nth-child(2) ul li p:first-child img {
+            height: 150px;
+            width: 150px; }
+          #box #main .container ul.buyList div:nth-child(2) ul li p:first-child i {
+            display: block;
+            height: 23px;
+            width: 23px;
+            background: url("../img/img.fw.png") -21px -45px;
+            position: absolute;
+            top: 68px;
+            left: -32px; }
+        #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(2) {
+          width: 268px;
+          padding-top: 10px; }
+          #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(2) span {
+            display: block;
+            line-height: 24px;
+            color: #444; }
+            #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(2) span:first-child {
+              font-weight: bold;
+              font-size: 14px; }
+            #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(2) span:last-child {
+              color: #f00; }
+        #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(3) {
+          width: 158px;
+          line-height: 150px; }
+        #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(3) {
+          width: 150px;
+          line-height: 150px; }
+        #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(4) {
+          width: 164px;
+          line-height: 158px; }
+          #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(4) span {
+            display: inline-block;
+            font-weight: bold;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            font-size: 16px; }
+            #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(4) span input {
+              border: 0 none;
+              width: 20px; }
+          #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(4) span.less, #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(4) span.more:hover {
+            cursor: pointer; }
+        #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(5) {
+          width: 150px;
+          line-height: 150px;
+          font-weight: bold; }
+        #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(6) {
+          width: 110px;
+          line-height: 150px; }
+        #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(7) {
+          text-align: center;
+          padding-top: 60px; }
+          #box #main .container ul.buyList div:nth-child(2) ul li p:nth-child(7) a {
+            display: block;
+            color: #444;
+            line-height: 20px; }
+    #box #main .container ul.buyList .clearBtn, #box #main .container ul.buyList .del_goods:hover {
+      cursor: pointer; }
+  #box #main .container .like {
+    padding-top: 10px; }
+    #box #main .container .like p {
+      line-height: 40px; }
+    #box #main .container .like ul.love {
+      height: 368px;
+      border: 1px solid #eee;
+      padding: 10px 0 0 10px; }
+      #box #main .container .like ul.love li {
+        height: 350px;
+        border: 1px solid #fff;
+        float: left;
+        padding: 10px 0 0 16px;
+        margin-right: 10px; }
+        #box #main .container .like ul.love li img {
+          width: 230px;
+          height: 230px;
+          padding-right: 10px; }
+        #box #main .container .like ul.love li span {
+          display: block;
+          color: #444;
+          font-size: 12px; }
+          #box #main .container .like ul.love li span:nth-child(3) {
+            font-size: 14px;
+            padding-top: 20px;
+            color: #f00; }
+        #box #main .container .like ul.love li button {
+          height: 32px;
+          width: 100px;
+          border: 0 none;
+          border: 1px solid #d0d0d0;
+          background: #f3f3f3;
+          color: #444;
+          margin: 10px 0 0 60px; }
+        #box #main .container .like ul.love li button:hover {
+          background: #eee;
+          border: 1px solid #d0d0d0;
+          cursor: pointer; }
+      #box #main .container .like ul.love li:hover {
+        border: 1px solid #ddd; }

@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded',function(){
     params = decodeURI(params);
     // 还原数据，把url参数（string）转变成对象;
     var idx = params.indexOf('?');
-    // console.log(idx);
     // 返回0，
     // 从idx=1开始截取，到最后；
     var params = params.substring(idx + 1);
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded',function(){
     `;
     center.innerHTML = `
         <div class="details_div">
-            <img src="${res.bigUrl1}">
+            <img class="bigImg" src="${res.bigUrl1}" data-guid="${res.id}">
         </div>
         <div class="right">
             <ul>
@@ -69,10 +68,10 @@ document.addEventListener('DOMContentLoaded',function(){
                     </span>
                 </li>
                 <li><span>尺寸</span><span>${res.title}</span></li>
-                <li><span>数量</span><span>-</span><span><input type="text" value="1"/></span><span>+</span><span>件</span></li>
+                <li><span>数量</span><span class="reduce">-</span><span><input type="text" value="1" class="num_input"/></span><span class="add">+</span><span>件</span></li>
                 <li>
                     <button>立即购买</button>
-                    <button>加入购物车</button>
+                    <button class="buyCar">加入购物车</button>
                     <button>收藏</button>
                 </li>
             </ul>
@@ -86,8 +85,8 @@ document.addEventListener('DOMContentLoaded',function(){
         
     `;
     var imgs = document.querySelectorAll('.test')[0];
-    console.log(imgs);
     var attr = imgs.getAttribute('src');
+    //显示小图部分
     //只有两张小图
     if(attr == '../img/hot21.jpg' || attr == '../img/28_big_details.jpg' || attr == '../img/hot23.jpg' || attr == '../img/hot28.jpg' || attr == '../img/hot31.jpg' || attr == '../img/hot32.jpg'){
         small.innerHTML +=  `
@@ -97,7 +96,7 @@ document.addEventListener('DOMContentLoaded',function(){
         `;
     }
     //有三张小图
-    if(attr == '../img/01_small1.png' || attr == '../img/03_small1.jpg' || attr== '../img/11_big_details.png' || attr == '../img/hot11.jpg' || attr == '../img/hot14.jpg' || attr== '../img/hot17.jpg' || attr == '../img/36_big_details.png' || attr == '../img/hot2.jpg'){
+    if(attr == '../img/01_small1.png' || attr == '../img/03_small1.jpg' || attr== '../img/11_big_details.png' || attr == '../img/hot11.jpg' || attr == '../img/hot14.jpg' || attr== '../img/hot17.jpg' || attr == '../img/36_big_details.png' || attr == '../img/hot2.jpg' || attr == '../img/play8.jpg' || attr == '../img/play12.jpg' || attr == '../img/play26.jpg' || attr == '../img/play28.jpg' || attr == '../img/8_fruits_big.jpg' || attr == '../img/fruits10.jpg' || attr == '../img/fruits12.jpg'){
         small.innerHTML +=  `
             <div class="img_div">
             <a href="#"><img class="special" src="${res.small2}"></a>
@@ -123,9 +122,8 @@ document.addEventListener('DOMContentLoaded',function(){
             `;
         }
     }
-
     //最佳搭配
-    if(attr == '../img/hot1.jpg' || attr == '../img/hot16.jpg' || attr == '../img/hot18.jpg' || attr == '../img/hot19.jpg'){
+    if(attr == '../img/hot1.jpg' || attr == '../img/hot16.jpg' || attr == '../img/hot18.jpg' || attr == '../img/hot19.jpg' || attr == '../img/play28.jpg' ){
         match.innerHTML += `
         <ul class="match_ul clearfix">
             <li>
@@ -134,7 +132,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 <span>${res.match_price1}</span>
             </li>
         </ul>`;
-    }else if(attr == '../img/01_small1.png' ||　attr == '../img/11_big_details.png' || attr == '../img/hot13.jpg'){
+    }else if(attr == '../img/01_small1.png' ||　attr == '../img/11_big_details.png' || attr == '../img/hot13.jpg' || attr == '../img/play17.jpg'){
         match.innerHTML += `
         <ul class="match_ul clearfix">
             <li>
@@ -195,10 +193,9 @@ document.addEventListener('DOMContentLoaded',function(){
         </ul>
         `;
     }
-
-    //大图详情部分
+    //大图详情部分---文字
     //详情为大图的有：01_small1.png / 03_small1.jpg
-    if(attr == '../img/hot3.jpg' || attr == '../img/hot35.jpg' || attr == '../img/06_big_details.jpg' || attr == '../img/hot9.jpg' || attr == '../img/hot13.jpg' || attr == '../img/hot15.jpg' || attr == '../img/hot_left24.jpg'){
+    if(attr == '../img/hot3.jpg' || attr == '../img/hot35.jpg' || attr == '../img/06_big_details.jpg' || attr == '../img/hot9.jpg' || attr == '../img/hot13.jpg' || attr == '../img/hot15.jpg' || attr == '../img/hot_left24.jpg' || attr == '../img/play8.jpg' || attr == '../img/play10.jpg' || attr == '../img/play14.jpg' || attr == '../img/play17.jpg' || attr == '../img/play22.jpg' || attr == '../img/play29.jpg'){
         center2.innerHTML = `
             <div class="right_ul">
             <ul>
@@ -239,7 +236,9 @@ document.addEventListener('DOMContentLoaded',function(){
             </li>
             </ul></div>
         `;
-    }else if(attr == '../img/11_big_details.png' || attr == '../img/hot18.jpg' || attr == '../img/hot21.jpg' || attr == '../img/hot25.jpg' || attr == '../img/hot27.jpg'){
+    }
+    //五张详情图
+    else if(attr == '../img/11_big_details.png' || attr == '../img/hot18.jpg' || attr == '../img/hot21.jpg' || attr == '../img/hot25.jpg' || attr == '../img/hot27.jpg' || attr == '../img/play16.jpg' || attr == '../img/play18.jpg' || attr == '../img/play21.jpg' || attr == '../img/play25.jpg' || attr == '../img/play27.jpg' || attr == '../img/fruits15.jpg' || attr == '../img/hot16.jpg'){
         center2.innerHTML = `
             <ul>
                 <li><img src="${res.bigImg1}"</li>
@@ -250,7 +249,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 <li><img src="${res.bigImg11}"</li>
             </ul>   
         `;
-    }else if(attr == '../img/27_big_details.jpg' || attr == '../img/hot22.jpg' || attr == '../img/hot26.jpg'){
+    }else if(attr == '../img/27_big_details.jpg' || attr == '../img/hot22.jpg' || attr == '../img/hot26.jpg' || attr == '../img/fruits01.jpg'){
         center2.innerHTML = `
             <ul>
                 <li><img src="${res.bigImg1}"</li>
@@ -275,5 +274,105 @@ document.addEventListener('DOMContentLoaded',function(){
                 <li><img src="${res.bigImg11}"</li>
             </ul>   
         `;
+    }
+    // 把cookie中的carlist赋值给一个数组
+    // 进入页面先获取之前的cookie值
+    var carlist = [];
+    var cookies = document.cookie;
+    if(cookies.length>0){
+        cookies = cookies.split('; ');
+        cookies.forEach(function(cookie){
+            var temp = cookie.split('=');
+            if(temp[0] === 'carlist'){
+                carlist = JSON.parse(temp[1]);
+            }
+        })
+    }
+    //加入购物车动画效果
+    var buyCar = document.querySelector('.buyCar');
+    var bigImg = document.querySelector('.bigImg');
+    var buycar = document.querySelector('.buycar');
+    //商品增减按钮
+    var reduce = document.querySelector('.reduce');
+    var add = document.querySelector('.add');
+    buyCar.onclick = function(){
+        var copyImg = bigImg.cloneNode();
+        copyImg.style.position = 'absolute';
+        copyImg.style.left = bigImg.offsetLeft + 'px';
+        copyImg.style.top = bigImg.offsetTop + 'px';
+        copyImg.style.width = bigImg.clientWidth + 'px';
+        document.body.appendChild(copyImg);
+
+        let target = {
+            left:buycar.offsetLeft+10,
+            top:buycar.offsetTop+6,
+            width:20
+        }
+        animate(copyImg,target,()=>{
+            copyImg.style.display = 'none';
+        });
+        var currentImg = document.querySelector(".bigImg");
+        var imgurl = currentImg.getAttribute('src');
+        var has = false;
+        for(var i=0;i<carlist.length;i++){
+            // 已经存在
+            if(carlist[i].imgurl === imgurl){
+                carlist[i].qty++;
+                document.querySelector('.qty').innerHTML = carlist[i].qty;
+                has=true;
+                break;
+            }
+        }
+        // 不存在
+        if(!has){
+            var goods = {
+                imgurl:res.bigUrl1,
+                title:res.title,
+                price:res.price,
+                number:res.num,
+                qty:1,
+                id:res.id,
+                score:res.score
+            }
+
+            carlist.push(goods)
+        }
+        // 写入cookie
+        var date = new Date();
+        date.setDate(date.getDate()+15);
+        document.cookie = 'carlist=' + JSON.stringify(carlist) + ';expires=' + date.toUTCString();
+    }
+    var num_input = document.querySelector('.num_input').value;
+    add.onclick = function(){  
+        var currentImg = document.querySelector(".bigImg");
+        var imgurl = currentImg.getAttribute('src');  
+        document.querySelector('.num_input').value++;
+        var has = false;
+        for(var i=0;i<carlist.length;i++){
+            // 已经存在
+            if(carlist[i].imgurl === imgurl){
+                carlist[i].qty++;
+                has=true;
+                break;
+            }
+        }
+        // 不存在
+        if(!has){
+            var goods = {
+                imgurl:res.bigUrl1,
+                title:res.title,
+                price:res.price,
+                number:res.num,
+                qty:1,
+                id:res.id,
+                score:res.score
+            }
+
+            carlist.push(goods)
+        }
+        // 写入cookie
+        var date = new Date();
+        date.setDate(date.getDate()+15);
+        document.cookie = 'carlist=' + JSON.stringify(carlist) + ';expires=' + date.toUTCString();
     }
 })  

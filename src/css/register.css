@@ -64,12 +64,24 @@
             width: 80px;
             font-size: 12px;
             color: #444; }
+            #box #main .register .container .left ul li span.hint, #box #main .register .container .left ul li span.change {
+              height: 24px;
+              width: 285px;
+              margin: 6px 0 0 83px;
+              font-size: 14px;
+              color: #58bc58;
+              line-height: 24px;
+              padding-left: 10px; }
+            #box #main .register .container .left ul li span.change {
+              color: #f00; }
           #box #main .register .container .left ul li input {
             height: 34px;
             width: 284px;
             font-size: 12px;
             margin-bottom: 20px;
             padding-left: 5px; }
+            #box #main .register .container .left ul li input#username {
+              margin-bottom: 0px; }
           #box #main .register .container .left ul li.check {
             padding-left: 85px; }
             #box #main .register .container .left ul li.check input {
