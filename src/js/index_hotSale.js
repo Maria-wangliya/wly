@@ -1,5 +1,7 @@
-document.addEventListener('DOMContentLoaded',function(){
-        var hotlist = document.querySelectorAll('.hotlist');
+define(['jquery'],function($){
+    return {
+        index_hotSale_fz:function(){
+            var hotlist = document.querySelectorAll('.hotlist');
         // 当前ul
         var pageNo = 1;
         // 每个ul显示数量
@@ -147,4 +149,8 @@ document.addEventListener('DOMContentLoaded',function(){
             xhr_wly.open('get','api/index_goods.json',true);
             xhr_wly.send();   
         },500);
-    });
+        }
+
+    }
+
+})

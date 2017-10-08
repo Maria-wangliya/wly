@@ -1,4 +1,10 @@
 jQuery(function($){
+    //引入html公共部分
+    $('#header').load('../html/header.html');
+    $('#search').load('../html/search.html');
+    $('#nav').load('../html/nav.html');
+    $('#links').load('../html/links.html');
+    $('#footer').load('../html/footer.html');
     $('.banner').xCarousel({
         imgs:['../img/fruit_banner1.jpg','../img/fruit_banner1.jpg','../img/fruit_banner1.jpg','../img/fruit_banner1.jpg','../img/fruit_banner1.jpg'],
         index:0,
@@ -7,20 +13,22 @@ jQuery(function($){
     });
 
     //二级菜单出现
-    $('.classify').on('mouseover',function(){
-        $('.classify .classify_ul').css('display','block');
-    }).on('mouseout',function(){
-        $('.classify .classify_ul').css('display','none');
-    })
-    //二级菜单的hover部分
-    $lis = $('.classify ul li');
-    for($i=0;$i<$lis.length;$i++){
-        $($lis[$i]).mouseover(function(){
-           $(this).children('ul').css('display','block');
-        });
-        $($lis[$i]).mouseout(function(){
-           $(this).children('ul').css('display','none');
-        });
-    }
+    setTimeout(function(){
+        $('.classify').on('mouseover',function(){
+            $('.classify .classify_ul').css('display','block');
+        }).on('mouseout',function(){
+            $('.classify .classify_ul').css('display','none');
+        })
+        //二级菜单的hover部分
+        $lis = $('.classify ul li');
+        for($i=0;$i<$lis.length;$i++){
+            $($lis[$i]).mouseover(function(){
+               $(this).children('ul').css('display','block');
+            });
+            $($lis[$i]).mouseout(function(){
+               $(this).children('ul').css('display','none');
+            });
+        }
+    },500)
   
 });

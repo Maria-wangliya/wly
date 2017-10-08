@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded',function(){
             cookies = cookies.split('; ');
             cookies.forEach(function(cookie){
                 var temp = cookie.split('=');
-
                 if(temp[0] === 'carlist'){
                     // 把json字符串转成数组
                     carlist = JSON.parse(temp[1]);
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 `;
             }).join('');
             // 添加前先清空
-            // carList.innerHTML = '';
+            carList.innerHTML = '';
             carList.appendChild(ul);
         }
         render();
@@ -76,7 +75,17 @@ document.addEventListener('DOMContentLoaded',function(){
                 <span>总计：<i>${allPrice}.00</i>元</span>
             `;
         }
-        Score_price();
+        if(carlist.length > 0){
+            Score_price();
+        }else if(carlist.length == 0){
+            //积分
+            total_p.innerHTML = `
+            <span>商品金额：<i>0.00</i>元</span>
+                <span>运费：0.00元</span>
+                <span>可返积分： <i>0</i></span>
+                <span>总计：<i>0.00</i>元</span>
+            `;
+        }
         //删除商品
         var del = document.querySelectorAll('.del');
         var collect = document.querySelectorAll('.collect');
@@ -98,7 +107,6 @@ document.addEventListener('DOMContentLoaded',function(){
                 var date = new Date();
                 date.setDate(date.getDate()+15);
                 document.cookie = 'carlist=' + JSON.stringify(carlist) + ';expires=' + date.toUTCString();
-                render();
                 Score_price();
             }
             collect[i].onclick = function(){
@@ -152,12 +160,30 @@ document.addEventListener('DOMContentLoaded',function(){
         del_goods.onclick = function(){
             for(let i=0;i<i_check.length;i++){
                 if(i_check[i].style.backgroundPosition == "-21px -74px"){
-                    i_check[i].parentNode.parentNode.parentNode.removeChild(i_check[i].parentNode.parentNode);
+                    if(carlist[i].id == i_check[i].parentNode.parentNode.dataset.guid){
+                        carlist.splice(i,1);
+                        i_check[i].parentNode.parentNode.parentNode.innerHTML ='';
+                        break;
+                    }
                 }
-                Score_price();
             }
-            
+            location.reload();
+            var date = new Date();
+            date.setDate(date.getDate()+15);
+            document.cookie = 'carlist=' + JSON.stringify(carlist) + ';expires=' + date.toUTCString();
+            if(carlist.length > 0){
+                Score_price();
+            }else if(carlist.length == 0){
+                //积分
+                total_p.innerHTML = `
+                <span>商品金额：<i>0.00</i>元</span>
+                    <span>运费：0.00元</span>
+                    <span>可返积分： <i>0</i></span>
+                    <span>总计：<i>0.00</i>元</span>
+                `;
+            }
         }
+
         //全选
         var select_all = document.querySelector('.select_all');
         if(select_all.checked){
@@ -176,16 +202,35 @@ document.addEventListener('DOMContentLoaded',function(){
                 }
             }
         }
+
+        var res = 0;
+        for(var i=0;i<i_check.length;i++){
+            if(i_check[i].style.backgroundPosition = "-21px -74px"){
+                res++;
+            }
+        }
+        if(res == i_check.length){
+            select_all.checked = true;
+        }else{
+            select_all.checked = false;
+        }
         for(let i=0;i<i_check.length;i++){
             i_check[i].onclick = function(){
                 if(this.style.backgroundPosition == "-21px -45px"){
                     this.style.backgroundPosition = "-21px -74px";
+                    res++;
                 }
                 else{
                     this.style.backgroundPosition = "-21px -45px";
+                    res--;
+                    
                 }
+                if(res==i_check.length){
+                    select_all.checked =true;
+                }else{
+                    select_all.checked = false;
+                }
+                console.log(res);
             }
-            
         }
-
 })
