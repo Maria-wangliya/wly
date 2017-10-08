@@ -5,7 +5,7 @@
     $qty = isset($_REQUEST['qty']) ? $_REQUEST['qty'] : 4; 
 
     // 编写查询sql语句
-    $sql = 'select * from TV_Show';
+    $sql = 'select * from tv_Show';
 
     // 利用sql语句查询数据库
     // 查询结果集

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #box #nav {
   border-bottom: 2px solid #E91455; }
 
@@ -48,8 +49,8 @@
             content: '';
             display: block;
             height: 18px;
-            width: 18px;
-            background: url("../img/img.fw.png") 0 -40px;
+            width: 22px;
+            background: url("../img/img.fw.png") -358px -175px;
             position: absolute;
             top: 8px;
             left: 120px; }
@@ -284,36 +285,86 @@
             padding: 0 10px; }
           #box #main .container .date ul.date_ul li:nth-child(5) span {
             font-size: 12px; }
-  #box #main .container .goodsList ul li {
-    float: left;
-    padding: 10px 0 0 10px;
-    width: 230px;
-    height: 337px; }
-    #box #main .container .goodsList ul li img {
-      height: 210px;
-      width: 210px; }
-    #box #main .container .goodsList ul li img:hover {
-      cursor: pointer; }
-    #box #main .container .goodsList ul li a {
-      font-size: 12px;
-      color: #444;
-      line-height: 40px; }
-    #box #main .container .goodsList ul li a:hover {
-      text-decoration: underline;
-      color: #EC316B;
-      cursor: pointer; }
-    #box #main .container .goodsList ul li span {
-      display: block;
-      color: #e91456; }
-    #box #main .container .goodsList ul li button {
-      background: #f3f3f3;
-      border: 0 none;
-      border: 1px solid #d0d0d0;
-      height: 34px;
-      line-height: 34px;
-      color: #333;
-      padding: 0 12px;
-      margin-left: 60px; }
-    #box #main .container .goodsList ul li button:hover {
-      cursor: pointer;
-      background: #FAF7F7; }
+  #box #main .container .goodsList {
+    overflow: hidden; }
+    #box #main .container .goodsList ul {
+      overflow: hidden; }
+      #box #main .container .goodsList ul li {
+        float: left;
+        padding: 10px 0 0 10px;
+        width: 230px;
+        height: 337px; }
+        #box #main .container .goodsList ul li img {
+          height: 210px;
+          width: 210px; }
+        #box #main .container .goodsList ul li img:hover {
+          cursor: pointer; }
+        #box #main .container .goodsList ul li a {
+          font-size: 12px;
+          color: #444;
+          line-height: 40px; }
+        #box #main .container .goodsList ul li a:hover {
+          text-decoration: underline;
+          color: #EC316B;
+          cursor: pointer; }
+        #box #main .container .goodsList ul li span {
+          display: block;
+          color: #e91456; }
+        #box #main .container .goodsList ul li button {
+          background: #f3f3f3;
+          border: 0 none;
+          border: 1px solid #d0d0d0;
+          height: 34px;
+          line-height: 34px;
+          color: #333;
+          padding: 0 12px;
+          margin-left: 60px; }
+        #box #main .container .goodsList ul li button:hover {
+          cursor: pointer;
+          background: #FAF7F7; }
+    #box #main .container .goodsList .page {
+      float: right;
+      height: 40px;
+      width: 200px;
+      margin: 0 0 20px 40px; }
+      #box #main .container .goodsList .page span {
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "微软雅黑";
+        padding-right: 10px; }
+        #box #main .container .goodsList .page span:nth-child(2) {
+          display: inline-block;
+          height: 24px;
+          width: 24px;
+          padding: 2px 0 0 6px;
+          border: 1px solid #eee; }
+        #box #main .container .goodsList .page span.active:nth-child(2) {
+          background: pink; }
+        #box #main .container .goodsList .page span:nth-child(3) {
+          display: inline-block;
+          height: 24px;
+          width: 24px;
+          padding: 2px 0 0 6px;
+          border: 1px solid #eee; }
+        #box #main .container .goodsList .page span.active:nth-child(3) {
+          background: pink; }
+        #box #main .container .goodsList .page span:nth-child(4) {
+          display: inline-block;
+          height: 24px;
+          width: 24px;
+          padding: 2px 0 0 6px;
+          border: 1px solid #eee; }
+        #box #main .container .goodsList .page span.active:nth-child(4) {
+          background: pink; }
+        #box #main .container .goodsList .page span:nth-child(5) {
+          display: inline-block;
+          height: 24px;
+          width: 24px;
+          padding: 2px 0 0 6px;
+          border: 1px solid #eee; }
+        #box #main .container .goodsList .page span.active:nth-child(5) {
+          background: pink; }
+        #box #main .container .goodsList .page span:last-child {
+          padding-left: 8px; }
+      #box #main .container .goodsList .page span:hover {
+        cursor: pointer; }

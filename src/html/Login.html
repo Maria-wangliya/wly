@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/common.css" />
     <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <script type="text/javascript" src="../js/login.js"></script>
 </head>
 <body>
     <div id="box">
@@ -25,14 +26,14 @@
                     <div class="right">
                         <ul>
                             <li class="clearfix"><span>嘉丽购会员登录</span><a href="#">免费注册</a></li>
-                            <li><input type="text" placeholder="用户名/邮箱/电话号码"/></li>
-                            <li><input type="password" placeholder="密码"/></li>
+                            <li><input id="username" type="text" placeholder="用户名/邮箱/电话号码"/></li>
+                            <li><input id="password" type="password" placeholder="密码"/></li>
                             <li class="code clearfix">
-                                <input type="text" placeholder="验证码"/>
-                                <input type="text" disabled/>
+                                <input id="code" type="text" placeholder="验证码"/>
+                                <input type="text" disabled class="code_num" value="0000"/>
                             </li>
                             <li class="clearfix"><input type="checkbox"/><span>自动登录</span><a href="#">找回密码</a></li>
-                            <li><button>登录</button></li>
+                            <li><button id="onBtn">登录</button></li>
                             <li><span>亲，没有账号，你可以选择以下快捷登录方式！</span></li>
                             <li><a href="#"><i></i>QQ登录</a><a href="#"><i></i></a></li>
                         </ul>

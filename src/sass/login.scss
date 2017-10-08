@@ -89,9 +89,15 @@
                                     float:left;
                                     &:nth-child(2){
                                         width: 95px;
-                                        height: 32px;
-                                        background:url('../img/img.fw.png') 0 -411px;
+                                        height: 34px;
+                                        background:url('../img/code.gif') 0 -411px;
                                         border:0 none;
+                                        color:#fff;
+                                        font-size:18px;
+                                        letter-spacing:6px;
+                                        text-align:center;
+                                        font-style:italic;
+
                                     }
                                 }
                             }

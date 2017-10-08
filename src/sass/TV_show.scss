@@ -58,8 +58,8 @@
                                             content:'';
                                             display:block;
                                             height: 18px;
-                                            width: 18px;
-                                            background:url('../img/img.fw.png') 0 -40px;
+                                            width: 22px;
+                                            background:url('../img/img.fw.png') -358px -175px;
                                             position:absolute;
                                             top:8px;
                                             left:120px;
@@ -369,7 +369,9 @@
                 }
             }
             .goodsList{
+                overflow:hidden;
                 ul{
+                    overflow:hidden;
                     li{
                         float:left;
                         padding:10px 0 0 10px;
@@ -410,6 +412,37 @@
                             cursor:pointer;
                             background:#FAF7F7;
                         }
+                    }
+                }
+                .page{
+                    float:right;
+                    height: 40px;
+                    width: 200px;
+                    margin:0 0 20px 40px;
+                    span{
+                        font-size:14px;
+                        font-weight:bold;
+                        font-family:"微软雅黑";
+                        padding-right:10px;
+
+                        @for $i from 2 through 5{
+                            &:nth-child(#{$i}){
+                                display:inline-block;
+                                height:24px;
+                                width: 24px;
+                                padding:2px 0 0 6px;
+                                border:1px solid #eee;
+                            };
+                            &.active:nth-child(#{$i}){
+                                background:pink;
+                            };
+                        }
+                        &:last-child{
+                            padding-left:8px;
+                        }
+                    }
+                    span:hover{
+                        cursor:pointer;
                     }
                 }
             }

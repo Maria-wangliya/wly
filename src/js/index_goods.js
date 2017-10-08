@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded',function(){
         </ul>
     `;
     center.innerHTML = `
-        <div class="details_div">
-            <img class="bigImg" src="${res.bigUrl1}" data-guid="${res.id}">
+        <div class="details_div bigPic xzoom">
+            <img class="bigImg" src="${res.bigUrl1}" data-guid="${res.id}" data-big="${res.bigUrl1}">
         </div>
         <div class="right">
             <ul>
@@ -80,10 +80,11 @@ document.addEventListener('DOMContentLoaded',function(){
     
     small.innerHTML =  `
         <div class="img_div">
-        <a href="#"><img class="test" src="${res.small1}"></a>
+        <a class="small_click"><img class="test" src="${res.small1}"></a>
         </div>
         
     `;
+
     var imgs = document.querySelectorAll('.test')[0];
     var attr = imgs.getAttribute('src');
     //显示小图部分
@@ -91,7 +92,7 @@ document.addEventListener('DOMContentLoaded',function(){
     if(attr == '../img/hot21.jpg' || attr == '../img/28_big_details.jpg' || attr == '../img/hot23.jpg' || attr == '../img/hot28.jpg' || attr == '../img/hot31.jpg' || attr == '../img/hot32.jpg'){
         small.innerHTML +=  `
             <div class="img_div">
-            <a href="#"><img class="test" src="${res.small2}"></a>
+            <a><img class="test" src="${res.small2}"></a>
             </div>
         `;
     }
@@ -99,29 +100,41 @@ document.addEventListener('DOMContentLoaded',function(){
     if(attr == '../img/01_small1.png' || attr == '../img/03_small1.jpg' || attr== '../img/11_big_details.png' || attr == '../img/hot11.jpg' || attr == '../img/hot14.jpg' || attr== '../img/hot17.jpg' || attr == '../img/36_big_details.png' || attr == '../img/hot2.jpg' || attr == '../img/play8.jpg' || attr == '../img/play12.jpg' || attr == '../img/play26.jpg' || attr == '../img/play28.jpg' || attr == '../img/8_fruits_big.jpg' || attr == '../img/fruits10.jpg' || attr == '../img/fruits12.jpg'){
         small.innerHTML +=  `
             <div class="img_div">
-            <a href="#"><img class="special" src="${res.small2}"></a>
+            <a><img class="special" src="${res.small2}"></a>
             </div>
             <div class="img_div">
-            <a href="#"><img class="special" src="${res.small3}"></a>
+            <a><img class="special" src="${res.small3}"></a>
             </div>
         
         `;
         if(attr=='../img/11_big_details.png'){
             small.innerHTML += `<div class="img_div">
-            <a href="#"><img class="special" src="${res.small4}"></a>
+            <a><img class="special" src="${res.small4}"></a>
             </div>`;
         }
         if(attr=='../img/hot17.jpg'){
             small.innerHTML += `
                 <div class="img_div">
-                <a href="#"><img class="special" src="${res.small4}"></a>
+                <a><img class="special" src="${res.small4}"></a>
                 </div>
                 <div class="img_div">
-                <a href="#"><img class="special" src="${res.small5}"></a>
+                <a><img class="special" src="${res.small5}"></a>
                 </div>
             `;
         }
     }
+    //点击小图切换大图
+    var small_click = document.querySelectorAll('.img_div');
+    for(let i=0;i<small_click.length;i++){
+        console.log(small_click[i]);
+        small_click[i].onclick = function(){
+            var bigImg = this.parentNode.previousElementSibling.children[0].children[0];
+            bigImg.src = this.children[0].children[0].src;
+            bigImg.dataset.big = this.children[0].children[0].src;
+            xZoom();
+        }
+    }
+
     //最佳搭配
     if(attr == '../img/hot1.jpg' || attr == '../img/hot16.jpg' || attr == '../img/hot18.jpg' || attr == '../img/hot19.jpg' || attr == '../img/play28.jpg' ){
         match.innerHTML += `

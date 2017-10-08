@@ -73,9 +73,14 @@
             float: left; }
             #box #main .container .center .right ul li.code input:nth-child(2) {
               width: 95px;
-              height: 32px;
-              background: url("../img/img.fw.png") 0 -411px;
-              border: 0 none; }
+              height: 34px;
+              background: url("../img/code.gif") 0 -411px;
+              border: 0 none;
+              color: #fff;
+              font-size: 18px;
+              letter-spacing: 6px;
+              text-align: center;
+              font-style: italic; }
           #box #main .container .center .right ul li:nth-child(4) {
             margin-bottom: 16px; }
           #box #main .container .center .right ul li:nth-child(5) {
