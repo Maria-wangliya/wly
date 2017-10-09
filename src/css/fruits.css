@@ -4,7 +4,7 @@
 #box #banner .container {
   border: 1px solid #ccc;
   height: 482px;
-  border-top: 2px solid #E91455; }
+  border-top: 1px solid #E91455; }
   #box #banner .container .xcarousel {
     position: relative;
     height: 480px;

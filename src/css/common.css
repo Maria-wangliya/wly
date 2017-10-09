@@ -124,7 +124,8 @@
           left: 0; }
         #box #search .container .search .buycar p {
           line-height: 30px;
-          font-size: 12px; }
+          font-size: 12px;
+          color: #444; }
   #box #nav {
     border-bottom: 2px solid #E91455; }
     #box #nav .container {

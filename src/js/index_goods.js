@@ -421,7 +421,6 @@ define(['jquery'],function($){
                 document.cookie = 'carlist=' + JSON.stringify(carlist) + ';expires=' + date.toUTCString();
             }
             xZoom();
-
         }
     }
     

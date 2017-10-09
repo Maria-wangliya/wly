@@ -16,6 +16,7 @@ define(['jquery'],function($){
 
             //二级菜单出现
             setTimeout(function(){
+                $('.classify_ul').css('display','none')
                 $('.classify').on('mouseover',function(){
                     $('.classify .classify_ul').css('display','block');
                 }).on('mouseout',function(){

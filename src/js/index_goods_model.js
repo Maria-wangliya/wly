@@ -21,4 +21,5 @@ require.config({
 
 require(['jquery','banner','index_goods','get_history_cookie','animate','xzoom'],function($,banner,index_goods,get_history_cookie,animate,xzoom){
     index_goods.index_goods_fz();
+    get_history_cookie.get_history();
 });

@@ -86,6 +86,11 @@ document.addEventListener('DOMContentLoaded',function(){
                 <span>总计：<i>0.00</i>元</span>
             `;
         }
+
+        var account = document.querySelector('.account');
+        account.onclick = function(){
+            alert('请先登录');
+        }        
         //删除商品
         var del = document.querySelectorAll('.del');
         var collect = document.querySelectorAll('.collect');
@@ -242,7 +247,6 @@ document.addEventListener('DOMContentLoaded',function(){
                 }else{
                     select_all.checked = false;
                 }
-                console.log(res);
             }
         }
 })
