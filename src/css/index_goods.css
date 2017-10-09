@@ -1,18 +1,21 @@
 @charset "UTF-8";
-#box #search .container a .qty {
-  position: absolute;
-  height: 15px;
-  display: block;
-  width: 15px;
-  border-radius: 50%;
-  background: #EA1454;
-  top: 5px;
-  left: 24px;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  line-height: 15px;
-  font-weight: bold; }
+#box #search .container a {
+  position: relative; }
+  #box #search .container a .qty {
+    position: absolute;
+    height: 15px;
+    display: block;
+    width: 15px;
+    border-radius: 50%;
+    background: #EA1454;
+    top: 5px;
+    left: 24px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+    font-weight: bold;
+    z-index: 999; }
 
 #box a:hover {
   cursor: pointer; }

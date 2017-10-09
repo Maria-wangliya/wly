@@ -2,6 +2,7 @@
     #search{
         .container{
             a{
+                position:relative;
                .qty{
                     position:absolute;
                     height:15px;
@@ -16,6 +17,7 @@
                     text-align:center;
                     line-height:15px;
                     font-weight:bold;
+                    z-index:999;
                 } 
             }
         }

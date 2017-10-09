@@ -101,13 +101,25 @@ document.addEventListener('DOMContentLoaded',function(){
                 for(var i=0;i<carlist.length;i++){
                     if(carlist[i].id === guid){
                         carlist.splice(i,1);
+                        currentLi.parentNode.removeChild(currentLi);
                         break;
                     }
                 }
+                location.reload();
                 var date = new Date();
                 date.setDate(date.getDate()+15);
                 document.cookie = 'carlist=' + JSON.stringify(carlist) + ';expires=' + date.toUTCString();
-                Score_price();
+                if(carlist.length > 0){
+                    Score_price();
+                }else if(carlist.length == 0){
+                    //积分
+                    total_p.innerHTML = `
+                    <span>商品金额：<i>0.00</i>元</span>
+                        <span>运费：0.00元</span>
+                        <span>可返积分： <i>0</i></span>
+                        <span>总计：<i>0.00</i>元</span>
+                    `;
+                }
             }
             collect[i].onclick = function(){
                 alert("请先登录!");

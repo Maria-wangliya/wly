@@ -1,6 +1,37 @@
 define(['jquery'],function($){
     return {
         index_goods_fz:function(){
+
+
+        //引入html公共部分
+            $('#header').load('../html/header.html');
+            $('#nav').load('../html/nav.html');
+            $('#links').load('../html/links.html');
+            $('#footer').load('../html/footer.html');
+            $('.banner').xCarousel({
+                imgs:['../img/fruit_banner1.jpg','../img/fruit_banner1.jpg','../img/fruit_banner1.jpg','../img/fruit_banner1.jpg','../img/fruit_banner1.jpg'],
+                index:0,
+                width:1190,
+                type:'fade'
+            });
+            //二级菜单出现
+            setTimeout(function(){
+                $('.classify').on('mouseover',function(){
+                    $('.classify .classify_ul').css('display','block');
+                }).on('mouseout',function(){
+                    $('.classify .classify_ul').css('display','none');
+                })
+                //二级菜单的hover部分
+                $lis = $('.classify ul li');
+                for($i=0;$i<$lis.length;$i++){
+                    $($lis[$i]).mouseover(function(){
+                       $(this).children('ul').css('display','block');
+                    });
+                    $($lis[$i]).mouseout(function(){
+                       $(this).children('ul').css('display','none');
+                    });
+                }
+            },500);
             var share = document.querySelector('.share');
             var share_ul = document.querySelector('.share ul');
             var share_a = document.querySelector('.share_a');
@@ -128,7 +159,6 @@ define(['jquery'],function($){
             //点击小图切换大图
             var small_click = document.querySelectorAll('.img_div');
             for(let i=0;i<small_click.length;i++){
-                console.log(small_click[i]);
                 small_click[i].onclick = function(){
                     var bigImg = this.parentNode.previousElementSibling.children[0].children[0];
                     bigImg.src = this.children[0].children[0].src;
@@ -306,18 +336,17 @@ define(['jquery'],function($){
             //加入购物车动画效果
             var buyCar = document.querySelector('.buyCar');
             var bigImg = document.querySelector('.bigImg');
-            var buycar = document.querySelector('.buycar');
             //商品增减按钮
             var reduce = document.querySelector('.reduce');
             var add = document.querySelector('.add');
             buyCar.onclick = function(){
+                var buycar = document.querySelector('.buycar');
                 var copyImg = bigImg.cloneNode();
                 copyImg.style.position = 'absolute';
                 copyImg.style.left = bigImg.offsetLeft + 'px';
                 copyImg.style.top = bigImg.offsetTop + 'px';
                 copyImg.style.width = bigImg.clientWidth + 'px';
                 document.body.appendChild(copyImg);
-
                 let target = {
                     left:buycar.offsetLeft+10,
                     top:buycar.offsetTop+6,
@@ -328,12 +357,13 @@ define(['jquery'],function($){
                 });
                 var currentImg = document.querySelector(".bigImg");
                 var imgurl = currentImg.getAttribute('src');
+                var qty = document.querySelector('.qty');
                 var has = false;
                 for(var i=0;i<carlist.length;i++){
                     // 已经存在
                     if(carlist[i].imgurl === imgurl){
                         carlist[i].qty++;
-                        document.querySelector('.qty').innerHTML = carlist[i].qty;
+                        qty.innerHTML = carlist[i].qty;
                         has=true;
                         break;
                     }

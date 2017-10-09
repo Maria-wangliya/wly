@@ -13,6 +13,25 @@ define(['jquery'],function($){
             var txt_input= document.querySelectorAll('.txt_input');
             var date_start= document.querySelector('.date_start');
             var date_start2= document.querySelector('.date_start2');
+
+            //二级菜单出现
+            setTimeout(function(){
+                $('.classify').on('mouseover',function(){
+                    $('.classify .classify_ul').css('display','block');
+                }).on('mouseout',function(){
+                    $('.classify .classify_ul').css('display','none');
+                })
+                //二级菜单的hover部分
+                $lis = $('.classify ul li');
+                for($i=0;$i<$lis.length;$i++){
+                    $($lis[$i]).mouseover(function(){
+                       $(this).children('ul').css('display','block');
+                    });
+                    $($lis[$i]).mouseout(function(){
+                       $(this).children('ul').css('display','none');
+                    });
+                }
+            },500);
             // 当前ul
             var pageNo = 1;
             // 每个ul显示数量
